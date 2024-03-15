@@ -1,0 +1,16 @@
+/alu-csharp/csharp-hello_world/3-writeline/bin/Debug/net5.0/3-writeline
+/alu-csharp/csharp-hello_world/3-writeline/bin/Debug/net5.0/3-writeline.deps.json
+/alu-csharp/csharp-hello_world/3-writeline/bin/Debug/net5.0/3-writeline.runtimeconfig.json
+/alu-csharp/csharp-hello_world/3-writeline/bin/Debug/net5.0/3-writeline.runtimeconfig.dev.json
+/alu-csharp/csharp-hello_world/3-writeline/bin/Debug/net5.0/3-writeline.dll
+/alu-csharp/csharp-hello_world/3-writeline/bin/Debug/net5.0/ref/3-writeline.dll
+/alu-csharp/csharp-hello_world/3-writeline/bin/Debug/net5.0/3-writeline.pdb
+/alu-csharp/csharp-hello_world/3-writeline/obj/Debug/net5.0/3-writeline.csproj.AssemblyReference.cache
+/alu-csharp/csharp-hello_world/3-writeline/obj/Debug/net5.0/3-writeline.GeneratedMSBuildEditorConfig.editorconfig
+/alu-csharp/csharp-hello_world/3-writeline/obj/Debug/net5.0/3-writeline.AssemblyInfoInputs.cache
+/alu-csharp/csharp-hello_world/3-writeline/obj/Debug/net5.0/3-writeline.AssemblyInfo.cs
+/alu-csharp/csharp-hello_world/3-writeline/obj/Debug/net5.0/3-writeline.csproj.CoreCompileInputs.cache
+/alu-csharp/csharp-hello_world/3-writeline/obj/Debug/net5.0/3-writeline.dll
+/alu-csharp/csharp-hello_world/3-writeline/obj/Debug/net5.0/ref/3-writeline.dll
+/alu-csharp/csharp-hello_world/3-writeline/obj/Debug/net5.0/3-writeline.pdb
+/alu-csharp/csharp-hello_world/3-writeline/obj/Debug/net5.0/3-writeline.genruntimeconfig.cache
