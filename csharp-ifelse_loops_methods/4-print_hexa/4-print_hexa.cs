@@ -1,7 +1,12 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using System;
+
+class Program
 {
-	for (int i = 0; i < 99; i++)
+    static void Main(string[] args)
+    {
+        for (int i = 0; i < 99; i++)
         {
-            Console.WriteLine($"{i} = 0x{i:X}\n");
+            Console.Write($"{i} = 0x{i:X}\n");
         }
     }
+}
