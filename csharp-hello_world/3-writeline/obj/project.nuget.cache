@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "ISHAUnOVaqZ90rI/8daX837NwwKIoWkdNx1wd1ed33x8CkrTa2Lpb++QgHneOLXAqib6yoQ3KRHOqnjZLMQ53A==",
+  "dgSpecHash": "tFp+JvnRt04llF0bND/rqq/7baDsmQfH8qeEdhnZHD0GbVOO0hAv2pStj6X9hue9K68ig64ybOeVtVZOf96s1w==",
   "success": true,
   "projectFilePath": "C:\\Users\\musev\\alu-csharp\\csharp-hello_world\\3-writeline\\3-writeline.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\musev\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.17\\microsoft.netcore.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\musev\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.17\\microsoft.windowsdesktop.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\musev\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.17\\microsoft.aspnetcore.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\musev\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.17\\microsoft.netcore.app.host.win-x64.7.0.17.nupkg.sha512"
+  ],
   "logs": []
 }
