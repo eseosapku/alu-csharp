@@ -1,5 +1,16 @@
-﻿// See https://aka.ms/new-console-template for more information
-for (char c = 'a'; c <= 'z'; c++)
+﻿using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        string alphabet = ""; // Initialize an empty string to store the alphabet
+        
+        for (char letter = 'a'; letter <= 'z'; letter++)
         {
-            Console.Write(c);
+            alphabet += letter; // Concatenate each letter to the string
         }
+
+        Console.Write(alphabet); // Print the alphabet without a new line
+    }
+}
