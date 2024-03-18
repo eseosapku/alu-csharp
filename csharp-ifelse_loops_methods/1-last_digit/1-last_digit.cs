@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 Random rndm = new Random();
         int number = rndm.Next(-10000, 10000);
-        int lastDigit = Math.Abs(number) % 10;
+        int lastDigit = number % 10;
         Console.Write("The last digit of {0} is ", number);
         if (lastDigit > 5)
         {
