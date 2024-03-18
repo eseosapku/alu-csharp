@@ -1,10 +1,3 @@
-﻿using System;
-class Program
-{
-    static void Main(string[] args)
-    {
-        int number = 972;
-        Console.WriteLine($"{number} Mission Street");
-        Console.WriteLine(); // followed by a new line
-    }
-}
+﻿// See https://aka.ms/new-console-template for more information        
+int number = 972;
+Console.WriteLine($"{number} Mission Street\n");
