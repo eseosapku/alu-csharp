@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "sX8D1epsMRrVOBMycpVD48RGRL0VEVU3AyRy71BwGOafpWCNidNcaokTvh1dlqMF9tgBFMeP+RkHevKrB10n9w==",
+  "dgSpecHash": "EeeeZIS7BS+9FDBv61Y8CSFbTH5L7E25dFNU8bzgzGmEm+G+JAzp3FhOcr4xqSzU/HjtuhIgVK/PTcCnbvibgg==",
   "success": true,
   "projectFilePath": "C:\\Users\\musev\\alu-csharp\\csharp-hello_world\\7-concat\\7-concat.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\musev\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.17\\microsoft.netcore.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\musev\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.17\\microsoft.windowsdesktop.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\musev\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.17\\microsoft.aspnetcore.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\musev\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.17\\microsoft.netcore.app.host.win-x64.7.0.17.nupkg.sha512"
+  ],
   "logs": []
 }
