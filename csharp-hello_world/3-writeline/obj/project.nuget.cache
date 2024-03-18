@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ui8WX6MqlhzczXMJvnp3+vLltXAvDOpi3NBxSNmckDrn3QzuwtT/MRuNCd06cPYRdOQhkC6UMcKQ23snOcGRFA==",
+  "dgSpecHash": "ISHAUnOVaqZ90rI/8daX837NwwKIoWkdNx1wd1ed33x8CkrTa2Lpb++QgHneOLXAqib6yoQ3KRHOqnjZLMQ53A==",
   "success": true,
-  "projectFilePath": "/alu-csharp/csharp-hello_world/3-writeline/3-writeline.csproj",
+  "projectFilePath": "C:\\Users\\musev\\alu-csharp\\csharp-hello_world\\3-writeline\\3-writeline.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
