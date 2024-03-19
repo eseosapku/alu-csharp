@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "DQVS7mll5TM0nI1tofjnvBHg2qfLXbVS9dllLTnT3lQG9VAL626jY7fwDgp/U0t6Zssjk9OuxupYjWem+VFDlQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\musev\\alu-csharp\\csharp-ifelse_loops_methods\\9-add\\9-add.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\musev\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.17\\microsoft.netcore.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\musev\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.17\\microsoft.windowsdesktop.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\musev\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.17\\microsoft.aspnetcore.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\musev\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.17\\microsoft.netcore.app.host.win-x64.7.0.17.nupkg.sha512"
+  ],
+  "logs": []
+}
