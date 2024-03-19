@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("4-print_hexa")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1ce91460b35c63ed0f3a05e07279874499f95cd8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+35ced91f727881e8dd1d2c10f8e3a917db0b6b41")]
 [assembly: System.Reflection.AssemblyProductAttribute("4-print_hexa")]
 [assembly: System.Reflection.AssemblyTitleAttribute("4-print_hexa")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
