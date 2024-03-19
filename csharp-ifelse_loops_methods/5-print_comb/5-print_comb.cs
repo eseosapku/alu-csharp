@@ -7,7 +7,7 @@ class Program{
             if(i == 99){
                 Console.Write($"{i}");
             }else{
-                Console.Write($"{i:D2}, ");
+                Console.Write($"{i:D2},");
             }
          }
         }
