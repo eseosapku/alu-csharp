@@ -2,24 +2,24 @@
 {
     public static void PrintLine(int length)
     {
-        // Check if length is 0 or less
+        
         if (length <= 0)
         {
-            Console.WriteLine(); // Print only a new line
+            Console.WriteLine();
         }
         else
         {
             for (int i = 0; i < length; i++)
             {
-                Console.Write("_"); // Print "_" for the specified length
+                Console.Write("_"); 
             }
-            Console.WriteLine(); // End the line with a new line
+            Console.WriteLine(); 
         }
     }
 
     static void Main(string[] args)
     {
-        // Example usage
+      
         PrintLine(5);
         PrintLine(0);
         PrintLine(-3);
