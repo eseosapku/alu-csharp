@@ -30,7 +30,8 @@ public class Array
     // Example usage
     static void Main(string[] args)
     {
-        int[] result = CreatePrint(5);
-        // Use result array as needed
+        CreatePrint(5);
+        CreatePrint(0);
+        CreatePrint(-3);
     }
 }
