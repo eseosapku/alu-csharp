@@ -1,6 +1,6 @@
 ﻿using System;
 
-public class Array
+class Array
 {
     public static int?[] CreatePrint(int size)
     {
@@ -32,7 +32,7 @@ public class Array
     }
 
     // Example usage
-    static void Main(string[] args)
+    static void Main(string[] args) 
     {
         CreatePrint(10);
         CreatePrint(16);
