@@ -12,7 +12,7 @@ public class Array
         else if (size == 0)
         {
             Console.WriteLine();
-            return new int?[0]; // Return an empty array
+            return new int?[0]; 
         }
         else
         {
@@ -22,12 +22,12 @@ public class Array
                 newArray[i] = i;
                 Console.Write($"{i} ");
             }
-            Console.WriteLine(); // Print new line after printing all elements
+            Console.WriteLine(); 
             return newArray;
         }
     }
 
-    // Example usage
+    
     static void Main(string[] args)
     {
         CreatePrint(5);
