@@ -2,7 +2,7 @@
 
 public class Array
 {
-    public static int[] CreatePrint(int size)
+    public static int?[] CreatePrint(int size)
     {
         if (size < 0)
         {
@@ -12,11 +12,11 @@ public class Array
         else if (size == 0)
         {
             Console.WriteLine();
-            return new int[0]; // Return an empty array
+            return new int?]; // Return an empty array
         }
         else
         {
-            int[] newArray = new int[size];
+            int?[] newArray = new int?[size];
             for (int i = 0; i < size; i++)
             {
                 newArray[i] = i;
