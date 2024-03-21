@@ -1,4 +1,6 @@
-﻿public class Array
+﻿using System;
+
+public class Array
 {
   public static void Reverse(int[] array)
   {
