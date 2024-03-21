@@ -4,15 +4,19 @@ class Program
 {
     static void Main(string[] args)
     {
-        int[] array = { 1, 2, 3, 4, 5 };
-        int index = 2;
-        int newValue = 10;
-        int[] updatedArray = Array.ReplaceElement(array, index, newValue);
-        Console.WriteLine("Updated array: [{0}]", string.Join(", ", updatedArray));
+        int[] array1 = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+        int[] array2 = null;
+        int[] array3 = {};
+        int[] array4 = {98, -10, 0, 972, -42};
+
+        MyArray.Reverse(array1);
+        MyArray.Reverse(array2);
+        MyArray.Reverse(array3);
+        MyArray.Reverse(array4);
     }
 }
 
-class Array
+class MyArray
 {
     public static int[] ReplaceElement(int[] array, int index, int n)
     {
@@ -25,6 +29,23 @@ class Array
         {
             array[index] = n; // Replace the element at the specified index
             return array;
+        }
+    }
+
+    public static void Reverse(int[] array)
+    {
+        if (array != null)
+        {
+            Array.Reverse(array);
+            foreach (int num in array)
+            {
+                Console.Write(num + " ");
+            }
+            Console.WriteLine();
+        }
+        else
+        {
+            Console.WriteLine("Array is null");
         }
     }
 }
