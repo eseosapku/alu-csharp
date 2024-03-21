@@ -1,16 +1,29 @@
 using System;
 
-public class ArrayUtils
+class MainClass
 {
-    public static int[] ReplaceElement(int[] array, int index, int n)
+    public static void Main(string[] args)
     {
-        if (index < 0 || index >= array.Length)
-        {
-            Console.WriteLine("Index out of range");
-            return array; // Return unchanged array
-        }
+        int[] arr = { 1, 2, 3, 4, 5 };
 
-        array[index] = n;
-        return array;
+        Console.WriteLine("Original array:");
+        PrintArray(arr);
+
+        // Test ReplaceElement method
+        int index = 2;
+        int newValue = 10;
+        arr = ArrayUtils.ReplaceElement(arr, index, newValue);
+
+        Console.WriteLine($"Array after replacing element at index {index} with value {newValue}:");
+        PrintArray(arr);
+    }
+
+    private static void PrintArray(int[] arr)
+    {
+        foreach (var item in arr)
+        {
+            Console.Write($"{item} ");
+        }
+        Console.WriteLine();
     }
 }
