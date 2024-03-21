@@ -10,25 +10,26 @@ class Program
         int[] array4 = {98, -10, 0, 972, -42};
 
         ReverseArray(array1);
-        ReverseArray(array2); 
+        ReverseArray(array2); // This will produce a warning due to array2 being null
         ReverseArray(array3);
         ReverseArray(array4);
     }
 
     static void ReverseArray(int[] array)
-{
-    if (array != null)
     {
-        Array.Reverse(array);
-        foreach (int num in array)
+        if (array != null)
         {
-            Console.Write(num + " ");
+            Array.Reverse(array);
+            foreach (int num in array)
+            {
+                Console.Write(num + " ");
+            }
+            Console.WriteLine();
         }
-        Console.WriteLine();
-    }
-    else
-    {
-        Console.WriteLine("Array is null");
+        else
+        {
+            Console.WriteLine("Array is null");
+        }
     }
 }
-}
+
