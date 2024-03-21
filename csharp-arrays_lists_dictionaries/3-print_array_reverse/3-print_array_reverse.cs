@@ -9,16 +9,13 @@ class Program
         int[] array3 = {};
         int[] array4 = {98, -10, 0, 972, -42};
 
-        MyArray.Reverse(array1);
-        MyArray.Reverse(array2); // This will produce a warning due to array2 being null
-        MyArray.Reverse(array3);
-        MyArray.Reverse(array4);
+        ReverseArray(array1);
+        ReverseArray(array2); // This will produce a warning due to array2 being null
+        ReverseArray(array3);
+        ReverseArray(array4);
     }
-}
 
-class MyArray
-{
-    public static void Reverse(int[] array)
+    static void ReverseArray(int[] array)
     {
         if (array != null) // Check for null reference before using the array
         {
