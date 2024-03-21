@@ -1,27 +1,30 @@
 ﻿using System;
 
-public class Array
+class Program
 {
-    public static int elementAt(int[] array, int index)
+    static void Main(string[] args)
+    {
+        int[] array = { 1, 2, 3, 4, 5 };
+        int index = 2;
+        int newValue = 10;
+        int[] updatedArray = Array.ReplaceElement(array, index, newValue);
+        Console.WriteLine("Updated array: [{0}]", string.Join(", ", updatedArray));
+    }
+}
+
+class Array
+{
+    public static int[] ReplaceElement(int[] array, int index, int n)
     {
         if (index < 0 || index >= array.Length)
         {
             Console.WriteLine("Index out of range");
-            return -1;
+            return array; // Return the unchanged array
         }
         else
         {
-            return array[index];
+            array[index] = n; // Replace the element at the specified index
+            return array;
         }
     }
-
-    // Example usage
-    static void Main(string[] args)
-    {
-        int[] arr = { 1, 2, 3, 4, 5 };
-
-        Console.WriteLine(elementAt(arr, 2)); // Should print 3
-        Console.WriteLine(elementAt(arr, 7)); // Should print "Index out of range" and return -1
-    }
 }
-
