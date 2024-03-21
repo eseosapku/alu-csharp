@@ -34,18 +34,24 @@ class MyArray
 
     public static void Reverse(int[] array)
     {
-        if (array != null)
-        {
-            Array.Reverse(array);
-            foreach (int num in array)
-            {
-                Console.Write(num + " ");
-            }
-            Console.WriteLine();
-        }
-        else
+        if (array == null)
         {
             Console.WriteLine("Array is null");
+            return;
         }
+
+        if (array.Length == 0)
+        {
+            Console.WriteLine("Array is empty");
+            return;
+        }
+
+        Array.Reverse(array);
+        foreach (int num in array)
+        {
+            Console.Write(num + " ");
+        }
+        Console.WriteLine();
     }
 }
+
