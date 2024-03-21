@@ -10,7 +10,7 @@ class Program
         int[] array4 = {98, -10, 0, 972, -42};
 
         MyArray.Reverse(array1);
-        MyArray.Reverse(array2);
+        MyArray.Reverse(array2); // This will produce a warning due to array2 being null
         MyArray.Reverse(array3);
         MyArray.Reverse(array4);
     }
@@ -18,40 +18,20 @@ class Program
 
 class MyArray
 {
-    public static int[] ReplaceElement(int[] array, int index, int n)
+    public static void Reverse(int[] array)
     {
-        if (index < 0 || index >= array.Length)
+        if (array != null) // Check for null reference before using the array
         {
-            Console.WriteLine("Index out of range");
-            return array; // Return the unchanged array
+            Array.Reverse(array);
+            foreach (int num in array)
+            {
+                Console.Write(num + " ");
+            }
+            Console.WriteLine();
         }
         else
         {
-            array[index] = n; // Replace the element at the specified index
-            return array;
-        }
-    }
-
-    public static void Reverse(int[] array)
-    {
-        if (array == null)
-        {
             Console.WriteLine("Array is null");
-            return;
         }
-
-        if (array.Length == 0)
-        {
-            Console.WriteLine("Array is empty");
-            return;
-        }
-
-        Array.Reverse(array);
-        foreach (int num in array)
-        {
-            Console.Write(num + " ");
-        }
-        Console.WriteLine();
     }
 }
-
