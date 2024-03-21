@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "i9JVW5hZCQDrgB13GKqkdyZNt2flz3ksb8hbhzSKLNNCfQhFpcssOJJtn3hqcLz7qoPFA5vJgmkTfCQdfFQ//Q==",
+  "dgSpecHash": "QgLZ7jgWwgEJF/9KniLpHwYnpg8rBxDZ4t4+fPkWy+vdHfNCNR9AtO60iPEgrjTz7MfNY/HoxbfBSH3yt0b0RA==",
   "success": true,
   "projectFilePath": "C:\\Users\\musev\\alu-csharp\\csharp-arrays_lists_dictionaries\\1-element_at\\1-element_at.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\musev\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.17\\microsoft.netcore.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\musev\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.17\\microsoft.windowsdesktop.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\musev\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.17\\microsoft.aspnetcore.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\musev\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.17\\microsoft.netcore.app.host.win-x64.7.0.17.nupkg.sha512"
+  ],
   "logs": []
 }
