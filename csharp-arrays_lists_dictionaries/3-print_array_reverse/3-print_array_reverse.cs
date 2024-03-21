@@ -10,7 +10,7 @@ class Program
         int[] array4 = {98, -10, 0, 972, -42};
 
         ReverseArray(array1);
-        ReverseArray(array2); // This will produce a warning due to array2 being null
+        ReverseArray(array2); 
         ReverseArray(array3);
         ReverseArray(array4);
     }
@@ -30,4 +30,5 @@ class Program
     {
         Console.WriteLine("Array is null");
     }
+}
 }
