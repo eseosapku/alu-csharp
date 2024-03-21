@@ -9,9 +9,26 @@ class Program
         int[] array3 = {};
         int[] array4 = {98, -10, 0, 972, -42};
 
-        Array.Reverse(array1);
-        Array.Reverse(array2);
-        Array.Reverse(array3);
-        Array.Reverse(array4);
+        ReverseArray(array1);
+        ReverseArray(array2); // This will produce a warning due to array2 being null
+        ReverseArray(array3);
+        ReverseArray(array4);
+    }
+
+    static void ReverseArray(int[] array)
+    {
+        if (array != null)
+        {
+            Array.Reverse(array);
+            foreach (int num in array)
+            {
+                Console.Write(num + " ");
+            }
+            Console.WriteLine();
+        }
+        else
+        {
+            Console.WriteLine("Array is null");
+        }
     }
 }
