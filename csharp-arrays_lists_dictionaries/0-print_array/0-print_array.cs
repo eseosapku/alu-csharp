@@ -11,9 +11,9 @@ class Array{
             return null;
         }
 
-        int[] NumberList = new int[size];
+        int[] Number = new int[size];
         for(int i = 0; i < size; i ++){
-            NumberList[i] = i;
+            Number[i] = i;
             if(i < size - 1){
                 Console.Write($"{i} ");
             }else{
@@ -24,6 +24,6 @@ class Array{
         }
         Console.WriteLine();
 
-        return NumberList;
+        return Number;
     }
 }

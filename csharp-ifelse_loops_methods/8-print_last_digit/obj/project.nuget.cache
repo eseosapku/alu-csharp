@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "ALE5+uxr3zPmBVmMowTFEAGNJXaGoOCDxr+0e6XgmdYUNzqT12fpLz4yt+46TeQnAEfB4VGlEdsypjwHKOFcIA==",
+  "dgSpecHash": "nL3u9Ie20eg36L+1pjDb4shfIfa68R9AYzFHr1zFYJvwm2SurxVu/LYBbAQLn1wVIsJjJmVenRvIKwMCx2pjNQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\musev\\alu-csharp\\csharp-ifelse_loops_methods\\8-print_last_digit\\8-print_last_digit.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\musev\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.17\\microsoft.netcore.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\musev\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.17\\microsoft.windowsdesktop.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\musev\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.17\\microsoft.aspnetcore.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\musev\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.17\\microsoft.netcore.app.host.win-x64.7.0.17.nupkg.sha512"
+  ],
   "logs": []
 }
