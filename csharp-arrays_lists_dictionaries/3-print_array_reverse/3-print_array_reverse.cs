@@ -1,22 +1,21 @@
 ﻿using System;
-using System.Collections.Generic;
 
-class List {
-    public static List<int> CreatePrint(int size){
-        if(size < 0){
-            Console.WriteLine("Size cannot be negative");
-            return null;
-        }
-        else{
-            List<int> cacheList = new List<int>();
-            for(int index = 0; index < size; index++){
-                Console.Write(index);
-                if(index != size - 1) // Add space if it's not the last number
-                    Console.Write(" ");
-                cacheList.Add(index);
+class Array {
+    public static void Reverse(int[] array) {
+        if (array != null) {
+            int size = array.Length;
+            if (size > 0) {
+                for (int i = size - 1; i >= 0; i--) {
+                    Console.Write(array[i]);
+                    if (i != 0) // Add space if it's not the first number
+                        Console.Write(" ");
+                }
+                Console.WriteLine();
+            } else {
+                Console.WriteLine();
             }
+        } else {
             Console.WriteLine();
-            return cacheList;
         }
     }
 }
