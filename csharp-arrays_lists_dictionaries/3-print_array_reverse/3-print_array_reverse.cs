@@ -15,7 +15,7 @@ class Array {
                 Console.WriteLine();
             }
         } else {
-            Console.WriteLine();
+            Console.WriteLine("");
         }
     }
 }
