@@ -9,38 +9,24 @@ class Program
         int[] array3 = {};
         int[] array4 = {98, -10, 0, 972, -42};
 
-        Array.Reverse(array1);
-        if (array2 != null) // Check if array2 is not null before calling Reverse
-            Array.Reverse(array2);
-        if (array3 != null) // Check if array3 is not null before calling Reverse
-            Array.Reverse(array3);
-        Array.Reverse(array4);
-
-        // Print the reversed arrays
-        Console.WriteLine("Reversed array1:");
-        PrintArray(array1);
-
-        Console.WriteLine("Reversed array2:");
-        PrintArray(array2);
-
-        Console.WriteLine("Reversed array3:");
-        PrintArray(array3);
-
-        Console.WriteLine("Reversed array4:");
-        PrintArray(array4);
+        PrintArrayReverse(array1);
+        PrintArrayReverse(array2);
+        PrintArrayReverse(array3);
+        PrintArrayReverse(array4);
     }
 
-    static void PrintArray(int[] array)
+    static void PrintArrayReverse(int[] array)
     {
-        if (array == null)
+        if (array == null || array.Length == 0)
         {
-            Console.WriteLine("Array is null");
+            Console.WriteLine(); // Print an empty line for null or empty array
             return;
         }
-        foreach (var item in array)
+
+        for (int i = array.Length - 1; i >= 0; i--)
         {
-            Console.Write(item + " ");
+            Console.Write(array[i] + " ");
         }
-        Console.WriteLine();
+        Console.WriteLine(); // Print a new line after printing the array
     }
 }
