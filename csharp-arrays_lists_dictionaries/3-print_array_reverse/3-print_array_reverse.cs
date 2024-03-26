@@ -7,7 +7,7 @@ class Array {
             if (size > 0) {
                 for (int i = size - 1; i >= 0; i--) {
                     Console.Write(array[i]);
-                    if (i != 0) // Add space if it's not the first number
+                    if (i != 0) 
                         Console.Write(" ");
                 }
                 Console.WriteLine();
@@ -15,7 +15,7 @@ class Array {
                 Console.WriteLine();
             }
         } else {
-            Console.WriteLine();
+            Console.WriteLine("Array is null");
         }
     }
 }
