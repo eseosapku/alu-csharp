@@ -10,7 +10,7 @@ class List{
         }else{
             List<int> CacheList = new List<int>();
             for(int i = 0; i < size ; i ++){
-                Console.Write(i + " ");
+                Console.Write(i + "");
                 CacheList.Add(i);
             }
             Console.WriteLine();
