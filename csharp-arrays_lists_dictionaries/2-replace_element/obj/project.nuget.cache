@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "3QuhZPNSksjJ1+24K//3cDVyo6TKkL8L5DLPmVrfLD73Y02NAJpDRjGrKRNRWG87xX99NixeBOAnTT/rqvOmMw==",
+  "dgSpecHash": "oslD4REJe2S/tTJOAi89RKWO7UbCllxeF/gW8KDEau/gCaZqA4aVe6sVs/1swp7hJNZDqQi9phsdSVerzr3NLA==",
   "success": true,
   "projectFilePath": "C:\\Users\\musev\\alu-csharp\\csharp-arrays_lists_dictionaries\\2-replace_element\\2-replace_element.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\musev\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.3\\microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512"
+    "C:\\Users\\musev\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.17\\microsoft.netcore.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\musev\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.17\\microsoft.windowsdesktop.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\musev\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.17\\microsoft.aspnetcore.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\musev\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.17\\microsoft.netcore.app.host.win-x64.7.0.17.nupkg.sha512"
   ],
   "logs": []
 }

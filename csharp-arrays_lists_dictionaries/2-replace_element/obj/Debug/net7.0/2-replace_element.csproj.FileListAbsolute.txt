@@ -1,0 +1,5 @@
+C:\Users\musev\alu-csharp\csharp-arrays_lists_dictionaries\2-replace_element\obj\Debug\net7.0\2-replace_element.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\musev\alu-csharp\csharp-arrays_lists_dictionaries\2-replace_element\obj\Debug\net7.0\2-replace_element.AssemblyInfoInputs.cache
+C:\Users\musev\alu-csharp\csharp-arrays_lists_dictionaries\2-replace_element\obj\Debug\net7.0\2-replace_element.AssemblyInfo.cs
+C:\Users\musev\alu-csharp\csharp-arrays_lists_dictionaries\2-replace_element\obj\Debug\net7.0\2-replace_element.csproj.CoreCompileInputs.cache
+C:\Users\musev\alu-csharp\csharp-arrays_lists_dictionaries\2-replace_element\obj\Debug\net7.0\2-replace_element.sourcelink.json
