@@ -3,7 +3,7 @@
 class Array {
     public static void Reverse(int[] array) {
         if (array == null) {
-            Console.WriteLine("Input array is null");
+            Console.WriteLine();
             return;
         }
 
