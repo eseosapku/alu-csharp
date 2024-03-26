@@ -9,9 +9,11 @@ class List {
         else{
             List<int> cacheList = new List<int>();
             for(int index = 0; index < size; index++){
-                Console.WriteLine(index + " ");
+            Console.Write(index);
+                if(index != size - 1) // Add space if it's not the last number
+                    Console.Write(" ");
                 cacheList.Add(index);
-            }
+	    }
             Console.WriteLine();
             return cacheList;
         }
