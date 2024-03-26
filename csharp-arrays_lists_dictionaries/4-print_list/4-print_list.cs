@@ -10,29 +10,10 @@ class List {
             return null;
         }
         else{
-            for (int i = 0; i < size; i++){
+            for (int i = 0; i = size; i ++){
                 myList.Add(i);
+                return myList;
             }
-            PrintList(myList);
-            return myList;
         }
-    }
-
-    static void PrintList(List<int> list)
-    {
-        Console.Write("List: ");
-        foreach (int item in list)
-        {
-            Console.Write(item + " ");
-        }
-        Console.WriteLine();
-    }
-}
-
-class Program
-{
-    static void Main(string[] args)
-    {
-        // Main method can be left empty
     }
 }
