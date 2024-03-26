@@ -1,2 +1,38 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using System;
+using System.Collections.Generic;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        List<int>? newList;
+
+        newList = ListUtils.CreatePrint(10);
+        if (newList != null)
+        {
+            Console.WriteLine("List Length: " + newList.Count);
+            Console.WriteLine("----------------");
+        }
+        
+        newList = ListUtils.CreatePrint(16);
+        if (newList != null)
+        {
+            Console.WriteLine("List Length: " + newList.Count);
+            Console.WriteLine("----------------");
+        }
+        
+        newList = ListUtils.CreatePrint(0);
+        if (newList != null)
+        {
+            Console.WriteLine("List Length: " + newList.Count);
+            Console.WriteLine("----------------");
+        }
+        
+        newList = ListUtils.CreatePrint(1);
+        if (newList != null)
+        {
+            Console.WriteLine("List Length: " + newList.Count);
+            Console.WriteLine("----------------");
+        }        
+    }
+}
