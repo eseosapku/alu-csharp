@@ -1,60 +1,38 @@
 ﻿using System;
 using System.Collections.Generic;
 
-class Program
-{
-    static void Main(string[] args)
-    {
-        List<int> myList;
+class List {
+    public static List<int> CreatePrint(int size){
+        List<int> myList = new List<int>();
 
-        myList = List.CreatePrint(10);
-        PrintList(myList);
-
-        myList = List.CreatePrint(16);
-        PrintList(myList);
-
-        myList = List.CreatePrint(0);
-        PrintList(myList);
-
-        myList = List.CreatePrint(1);
-        PrintList(myList);
+        if (size == 0 || size < 0){
+            Console.WriteLine("Size cannot be negative");
+            return null;
+        }
+        else{
+            for (int i = 0; i < size; i++){
+                myList.Add(i);
+            }
+            PrintList(myList);
+            return myList;
+        }
     }
 
     static void PrintList(List<int> list)
     {
-        if (list != null)
+        Console.Write("List: ");
+        foreach (int item in list)
         {
-            Console.Write("List: ");
-            foreach (int item in list)
-            {
-                Console.Write(item + " ");
-            }
-            Console.WriteLine();
+            Console.Write(item + " ");
         }
-        else
-        {
-            Console.WriteLine("List is null");
-        }
+        Console.WriteLine();
     }
 }
 
-class List
+class Program
 {
-    public static List<int> CreatePrint(int size)
+    static void Main(string[] args)
     {
-        if (size <= 0)
-        {
-            Console.WriteLine("Size cannot be zero or negative. Returning an empty list.");
-            return new List<int>();
-        }
-
-        List<int> myList = new List<int>();
-
-        for (int i = 0; i < size; i++)
-        {
-            myList.Add(i);
-        }
-
-        return myList;
+        // Main method can be left empty
     }
 }
