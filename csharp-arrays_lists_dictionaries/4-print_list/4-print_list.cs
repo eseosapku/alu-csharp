@@ -1,27 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 
-class List
-{
-    public static List<int> CreatePrint(int size)
-    {
-        if (size <= 0)
-        {
-            Console.WriteLine("Size cannot be zero or negative. Returning an empty list.");
-            return new List<int>();
-        }
-
-        List<int> myList = new List<int>();
-
-        for (int i = 0; i < size; i++)
-        {
-            myList.Add(i);
-        }
-
-        return myList;
-    }
-}
-
 class Program
 {
     static void Main(string[] args)
@@ -56,5 +35,26 @@ class Program
         {
             Console.WriteLine("List is null");
         }
+    }
+}
+
+class List
+{
+    public static List<int> CreatePrint(int size)
+    {
+        if (size <= 0)
+        {
+            Console.WriteLine("Size cannot be zero or negative. Returning an empty list.");
+            return new List<int>();
+        }
+
+        List<int> myList = new List<int>();
+
+        for (int i = 0; i < size; i++)
+        {
+            myList.Add(i);
+        }
+
+        return myList;
     }
 }
