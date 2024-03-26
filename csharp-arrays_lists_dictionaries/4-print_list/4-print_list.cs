@@ -1,46 +1,26 @@
 ﻿using System;
 using System.Collections.Generic;
 
-class ListUtils
+class List
 {
     public static List<int>? CreatePrint(int size)
     {
-        // Your implementation here
-    }
-}
+        if (size < 0)
+        {
+            Console.WriteLine("Size cannot be negative");
+            return null;
+        }
 
-class Program
-{
-    static void Main(string[] args)
-    {
-        List<int>? newList;
+        List<int> newList = new List<int>();
 
-        newList = ListUtils.CreatePrint(10);
-        if (newList != null)
+        for (int i = 0; i < size; i++)
         {
-            Console.WriteLine("List Length: " + newList.Count);
-            Console.WriteLine("----------------");
+            newList.Add(i);
+            Console.Write(i + " ");
         }
-        
-        newList = ListUtils.CreatePrint(16);
-        if (newList != null)
-        {
-            Console.WriteLine("List Length: " + newList.Count);
-            Console.WriteLine("----------------");
-        }
-        
-        newList = ListUtils.CreatePrint(0);
-        if (newList != null)
-        {
-            Console.WriteLine("List Length: " + newList.Count);
-            Console.WriteLine("----------------");
-        }
-        
-        newList = ListUtils.CreatePrint(1);
-        if (newList != null)
-        {
-            Console.WriteLine("List Length: " + newList.Count);
-            Console.WriteLine("----------------");
-        }        
+
+        Console.WriteLine(); // Print new line after printing the list
+
+        return newList; // Return the newly created list
     }
 }
