@@ -1,9 +1,8 @@
 ﻿using System;
 
-public class PrintArrayReverse
-{
-    public static void PrintReversedArray(int[] array)
-    {
+class Array {
+    public static void Reversed(int[] array){ 
+
         if (array == null)
         {
             Console.WriteLine("Array is null");
