@@ -1,25 +1,33 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Collections;
 
-public class List
+class List
 {
     public static List<int> DeleteAt(List<int> myList, int index)
     {
-        if (index < 0 || index >= myList.Count)
+        int listSize = myList.Count;
+        List<int> cacheList = new List<int>();
+
+        if (index >= 0 && index < listSize)
+        {
+            for (int i = 0; i < listSize; i++)
+            {
+                if (i == index)
+                {
+                    continue;
+                }
+                else
+                {
+                    cacheList.Add(myList[i]);
+                }
+            }
+
+            return cacheList;
+        }
+        else
         {
             Console.WriteLine("Index is out of range");
-            return myList; // Return the unchanged list
+            return myList;
         }
-
-        List<int> newList = new List<int>();
-        for (int i = 0; i < myList.Count; i++)
-        {
-            if (i != index)
-            {
-                newList.Add(myList[i]);
-            }
-        }
-
-        return newList;
     }
 }
