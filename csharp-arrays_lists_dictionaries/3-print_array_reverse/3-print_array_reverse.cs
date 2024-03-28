@@ -1,6 +1,8 @@
 ﻿using System;
 
-   static void PrintReversedArray(int[] array)
+public class PrintArrayReverse
+{
+    public static void PrintReversedArray(int[] array)
     {
         if (array == null)
         {
@@ -11,7 +13,8 @@
         Array.Reverse(array); // Reverse the non-null array
         foreach (int num in array)
         {
-            Console.Write(num + " ");
+            Console.Write($"{num} ");
         }
         Console.WriteLine(); // Ensure output ends with a newline for correct formatting
     }
+}
