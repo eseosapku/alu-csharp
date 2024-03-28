@@ -7,7 +7,7 @@ public class List
     {
         if (index < 0 || index >= myList.Count)
         {
-            // Console.WriteLine("Index is out of range"); // Remove this line
+            Console.WriteLine("Index is out of range");
             return myList; // Return the unchanged list
         }
 
