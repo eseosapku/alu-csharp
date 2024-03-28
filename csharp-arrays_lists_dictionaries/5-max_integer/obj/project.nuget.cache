@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "kQ4ZzBjLyZVGUmEsWpvW/YageW38zpQc7BNEwaQL7nmnBOEQZFJ660ryC8U8DN5TyxQ2baIZbavFUq1SvHmwyw==",
+  "dgSpecHash": "NPAZ6LBymSzckjfLc5aGrXK5PEWasNVLCVrTDc9EyPiJ775BB4EEbm7XPPCnxhJuhVd2/T0+vLZ5blWPZjW/TA==",
   "success": true,
   "projectFilePath": "C:\\Users\\musev\\alu-csharp\\csharp-arrays_lists_dictionaries\\5-max_integer\\5-max_integer.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\musev\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.17\\microsoft.netcore.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\musev\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.17\\microsoft.windowsdesktop.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\musev\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.17\\microsoft.aspnetcore.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\musev\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.17\\microsoft.netcore.app.host.win-x64.7.0.17.nupkg.sha512"
+  ],
   "logs": []
 }
