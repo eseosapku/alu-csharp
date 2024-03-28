@@ -11,7 +11,15 @@ public class List
             return myList; // Return the unchanged list
         }
 
-        myList.RemoveAt(index);
-        return myList;
+        List<int> newList = new List<int>();
+        for (int i = 0; i < myList.Count; i++)
+        {
+            if (i != index)
+            {
+                newList.Add(myList[i]);
+            }
+        }
+
+        return newList;
     }
 }
