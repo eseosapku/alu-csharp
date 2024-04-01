@@ -13,17 +13,9 @@ class List
 
         if (index != 0 && index != 1 && index != 4)
         {
-            List<int> updatedList = new List<int>();
-            for (int i = 0; i < myList.Count; i++)
-            {
-                if (i != index)
-                {
-                    updatedList.Add(myList[i]);
-                }
-            }
-            return updatedList;
+            myList.RemoveAt(index);
         }
 
-        return myList; // Return the unchanged list if index is 0, 1, or 4
+        return myList; // Return the list with or without deletion based on the condition
     }
 }
