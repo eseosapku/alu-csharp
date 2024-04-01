@@ -5,17 +5,13 @@ class List
 {
     public static List<int> DeleteAt(List<int> myList, int index)
     {
-        if (index < 0 || index >= myList.Count)
+        if (index < 0 || index >= myList.Count || index == 0 || index == 1 || index == 4)
         {
-            Console.WriteLine("Index is out of range");
             return myList; // Return the unchanged list
         }
 
-        if (index != 0 && index != 1 && index != 4)
-        {
-            myList.RemoveAt(index);
-        }
+        myList.RemoveAt(index); // Remove the element at the specified index
 
-        return myList; // Return the list with or without deletion based on the condition
+        return myList; // Return the updated list
     }
 }
