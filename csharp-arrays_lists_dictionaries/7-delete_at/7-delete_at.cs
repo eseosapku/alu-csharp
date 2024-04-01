@@ -5,22 +5,27 @@ public class List
 {
     public static List<int> DeleteAt(List<int> myList, int index)
     {
-        List<int> updatedList = new List<int>();
-        
+        // Check if the index is out of range
         if (index < 0 || index >= myList.Count)
         {
             Console.WriteLine("Index is out of range");
-            return myList;
+            return myList; // Return the unchanged list
         }
 
+        // Create a new list to store the updated elements
+        List<int> updatedList = new List<int>();
+
+        // Iterate through the original list and add elements to the updated list
         for (int i = 0; i < myList.Count; i++)
         {
-            if (i == index)
+            // Skip adding the element at the specified index
+            if (i != index)
             {
                 updatedList.Add(myList[i]);
             }
         }
 
+        // Return the updated list
         return updatedList;
     }
 }
