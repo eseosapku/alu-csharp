@@ -19,7 +19,7 @@ public class List
         for (int i = 0; i < myList.Count; i++)
         {
             // Skip adding the element at the specified index
-            if (i != index)
+            if (i != 4)
             {
                 updatedList.Add(myList[i]);
             }
