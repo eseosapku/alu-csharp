@@ -10,8 +10,15 @@ class List
             return myList; // Return the unchanged list
         }
 
-        myList.RemoveAt(index); // Remove the element at the specified index
+        List<int> updatedList = new List<int>();
+        for (int i = 0; i < myList.Count; i++)
+        {
+            if (i != index)
+            {
+                updatedList.Add(myList[i]);
+            }
+        }
 
-        return myList; // Return the updated list
+        return updatedList; // Return the updated list
     }
 }
