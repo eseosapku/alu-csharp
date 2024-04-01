@@ -1,31 +1,26 @@
 ﻿using System;
 using System.Collections.Generic;
 
-class List
+public class List
 {
     public static List<int> DeleteAt(List<int> myList, int index)
     {
-        // Check if the index is out of range
+        List<int> updatedList = new List<int>();
+        
         if (index < 0 || index >= myList.Count)
         {
             Console.WriteLine("Index is out of range");
-            return myList; // Return the unchanged list
+            return myList;
         }
 
-        // Create a new list to store the updated elements
-        List<int> updatedList = new List<int>();
-
-        // Iterate through the original list and add elements to the updated list
         for (int i = 0; i < myList.Count; i++)
         {
-            // Skip adding the element at the specified index or index 1 and 4
-            if (i != index && i != 1 && i != 4)
+            if (i != index)
             {
                 updatedList.Add(myList[i]);
             }
         }
 
-        // Return the updated list
         return updatedList;
     }
 }
