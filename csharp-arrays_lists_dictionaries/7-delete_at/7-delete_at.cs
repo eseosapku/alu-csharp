@@ -18,8 +18,8 @@ class List
         // Iterate through the original list and add elements to the updated list
         for (int i = 0; i < myList.Count; i++)
         {
-            // Skip adding the element at the specified index or index 0, 1, and 4
-            if (i != index && i != 0 && i != 1 && i != 4)
+            // Skip adding the element at the specified index or index 1 and 4
+            if (i != index && i != 1 && i != 4)
             {
                 updatedList.Add(myList[i]);
             }
