@@ -11,20 +11,19 @@ class List
             return myList; // Return the unchanged list
         }
 
-        if (index == 0 || index == 1 || index == 4)
+        if (index != 0 && index != 1 && index != 4)
         {
-            Console.WriteLine("Index " + index + " cannot be deleted");
-            return myList; // Return the unchanged list
+            List<int> updatedList = new List<int>();
+            for (int i = 0; i < myList.Count; i++)
+            {
+                if (i != index)
+                {
+                    updatedList.Add(myList[i]);
+                }
+            }
+            return updatedList;
         }
 
-        List<int> updatedList = new List<int>();
-        for (int i = 0; i < myList.Count; i++)
-        {
-            if (i != index)
-            {
-                updatedList.Add(myList[i]);
-            }
-        }
-        return updatedList;
+        return myList; // Return the unchanged list if index is 0, 1, or 4
     }
 }
