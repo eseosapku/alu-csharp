@@ -3,27 +3,24 @@ using System.Collections.Generic;
 
 public class List
 {
-    public static List<int> DeleteAt(List<int> myList, int index)
+    public static List<int> DeleteAt(List<int> myList, List<int> indexesToDelete)
     {
         List<int> updatedList = new List<int>();
+        indexesToDelete.Sort(); // Sort indexes in ascending order (important)
 
-        if (index < 0 || index >= myList.Count)
-        {
-            Console.WriteLine("Index is out of range");
-            return myList; // Return original list if index is invalid
-        }
+        int removedCount = 0; // Keeps track of elements already removed
 
-        // Iterate through original list, shifting elements after target
         for (int i = 0; i < myList.Count; i++)
         {
-            if (i < index) // Add elements before target index
+            int currentIndex = i - removedCount; // Adjust index considering removals
+
+            if (indexesToDelete.Contains(currentIndex))
             {
-                updatedList.Add(myList[i]);
+                removedCount++; // Increment removed count if current index is to be deleted
+                continue; // Skip adding element to updated list
             }
-            else if (i > index) // Add elements after target index (shifted by 1)
-            {
-                updatedList.Add(myList[i - 1]);
-            }
+
+            updatedList.Add(myList[i]);
         }
 
         return updatedList;
