@@ -11,9 +11,9 @@ public class List
             return myList; // Return the unchanged list
         }
 
-        List<int> updatedList = new List<int>(myList.Count - 1); // Pre-allocate size
+        List<int> updatedList = new List<int>(myList.Count - index); // Pre-allocate size
 
-        for (int i = 1; i < myList.Count; i++)
+        for (int i = 0; i < myList.Count; i++)
         {
             if (i != index)
             {
