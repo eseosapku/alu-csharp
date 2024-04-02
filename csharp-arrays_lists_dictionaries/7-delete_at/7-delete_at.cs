@@ -1,32 +1,44 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections.Generic;
 
-class List{
+class Program
+{
+    static void Main(string[] args)
+    {
+        List<int> myList = new List<int>() { 1, 2, 3, 4, 5 };
 
-    public static List<int> DeleteAt(List<int> myList, int index){
-        int ListSize = myList.Count;
-        List<int> CacheList = new List<int>();
+        foreach (int i in myList)
+            Console.WriteLine(i);
 
-        if(index >= 0 && index < ListSize){
-            for(int i = 0; i < ListSize; i++){
-                if(i == index){
-                   // Console.WriteLine("Value o index is : " + index + " and value of i : " + i) ;
-                   // Console.WriteLine("index found");
-                    continue;
-                }else{
-                       // Console.WriteLine("Adding the number : " + myList[i]);
-                        CacheList.Add(myList[i]);
-                }
+        Console.WriteLine("----------");
 
-            }
-           // foreach(int temp in CacheList){
-           //         Console.WriteLine("Printing the cache list elements " + temp);
-           // }
+        myList = List.DeleteAt(myList, 2); // Assign the modified list back to myList
 
-            return myList;
-        }else{
+        foreach (int i in myList)
+            Console.WriteLine(i);
+    }
+}
+
+public class List
+{
+    public static List<int> DeleteAt(List<int> myList, int index)
+    {
+        if (index < 0 || index >= myList.Count)
+        {
             Console.WriteLine("Index is out of range");
-            return myList;
+            return myList; // Return the unchanged list
         }
 
+        List<int> updatedList = new List<int>(myList.Count - 1); // Pre-allocate size
+
+        for (int i = 0; i < myList.Count; i++)
+        {
+            if (i != index)
+            {
+                updatedList.Add(myList[i]);
+            }
+        }
+
+        return updatedList;
     }
 }
