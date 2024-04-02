@@ -1,32 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections;
+class List{
+    public static List<int> DeleteAt(List<int> myList, int index){
+        int ListSize = myList.Count;
+        List<int> CacheList = new List<int>();
+        if(index >= 0 && index < ListSize){
+            for(int i = 0; i < ListSize; i++){
+                if(i == index){
+                   // Console.WriteLine("Value o index is : " + index + " and value of i : " + i) ;
+                   // Console.WriteLine("index found");
+                    continue;
+                }else{
+                       // Console.WriteLine("Adding the number : " + myList[i]);
+                        CacheList.Add(myList[i]);
+                }
+            
+            }
+           // foreach(int temp in CacheList){
+           //         Console.WriteLine("Printing the cache list elements " + temp);
+           // }
 
-public class List
-{
-    public static List<int> DeleteAt(List<int> myList, int index)
-    {
-        if (myList == null)
-        {
-            Console.WriteLine("List is null");
             return myList;
-        }
-
-        if (index < 0 || index >= myList.Count)
-        {
+            return CacheList;
+        }else{
             Console.WriteLine("Index is out of range");
             return myList;
         }
-
-        List<int> updatedList = new List<int>();
-
-        for (int i = 0; i < myList.Count; i++)
-        {
-            if (i != index)
-            {
-                updatedList.Add(myList[i]);
-            }
-        }
-
-        return updatedList;
     }
 }
