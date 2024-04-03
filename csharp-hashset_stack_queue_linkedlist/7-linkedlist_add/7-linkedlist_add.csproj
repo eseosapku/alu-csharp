@@ -1,17 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
-class LList
-{
-    public static LinkedListNode<int> Add(LinkedList<int> myLList, int n)
-    {
-        // Create a new node with the specified value
-        LinkedListNode<int> newNode = new LinkedListNode<int>(n);
-        
-        // Insert the new node at the beginning of the linked list
-        myLList.AddFirst(newNode);
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <RootNamespace>_7_linkedlist_add</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
 
-        // Return the newly added node
-        return newNode;
-    }
-}
+</Project>
