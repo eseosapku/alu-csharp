@@ -17,12 +17,23 @@ class MyQueue
             Console.WriteLine($"Queue contains \"{search}\": True");
         }
 
-
-        for(int i = 0; i <= aQueue.Count; i++){
-            if(aQueue.Contains(search)){
-                string temp = aQueue.Dequeue();
+	  bool containsSearch = false;
+        int count = aQueue.Count;
+        for (int i = 0; i < count; i++)
+        {
+            string item = aQueue.Dequeue();
+            if (containsSearch)
+            {
+                aQueue.Enqueue(item);
+            }
+            else if (item == search)
+            {
+                containsSearch = true;
             }
         }
+
+        Console.WriteLine($"Queue contains \"{search}\": {containsSearch}");
+
         return aQueue;
     }
 }
