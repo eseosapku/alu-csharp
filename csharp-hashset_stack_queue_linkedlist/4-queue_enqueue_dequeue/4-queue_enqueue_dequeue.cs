@@ -6,39 +6,43 @@ class MyQueue
     public static Queue<string> Info(Queue<string> aQueue, string newItem, string search)
     {
         Console.WriteLine($"Number of items: {aQueue.Count}");
+        
         if (aQueue.Count == 0)
         {
             Console.WriteLine("Queue is empty");
+            return aQueue;
         }
-        else
+        
+        Console.WriteLine($"First item: {aQueue.Peek()}");
+
+        Queue<string> tempQueue = new Queue<string>();
+
+        bool containsSearch = false;
+        
+        // Dequeue and check each item
+        while (aQueue.Count > 0)
         {
-            Console.WriteLine($"First item: {aQueue.Peek()}");
+            string item = aQueue.Dequeue();
+            tempQueue.Enqueue(item);
+            if (item == search)
+            {
+                containsSearch = true;
+                break;
+            }
         }
 
+        // Enqueue new item
         aQueue.Enqueue(newItem);
 
-        bool containsSearch = aQueue.Contains(search);
+        Console.WriteLine($"Queue contains \"{search}\": {containsSearch}");
 
-        if (containsSearch)
+        // Enqueue back items from tempQueue
+        while (tempQueue.Count > 0)
         {
-            Console.WriteLine($"Queue contains \"{search}\": {containsSearch}");
-
-            Queue<string> tempQueue = new Queue<string>();
-
-            while (aQueue.Count > 0)
+            string item = tempQueue.Dequeue();
+            if (item != search)  // Skip the search item
             {
-                string item = aQueue.Dequeue();
-                if (item == search)
-                {
-                    break;
-                }
-                tempQueue.Enqueue(item);
-            }
-
-            // Add back elements that were not removed
-            while (tempQueue.Count > 0)
-            {
-                aQueue.Enqueue(tempQueue.Dequeue());
+                aQueue.Enqueue(item);
             }
         }
 
