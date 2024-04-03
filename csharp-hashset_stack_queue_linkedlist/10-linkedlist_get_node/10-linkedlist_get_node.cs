@@ -5,8 +5,8 @@ class LList
 {
     public static int GetNode(LinkedList<int> myLList, int n)
     {
-        // If the list is empty, return 0
-        if (myLList.First == null)
+        // If the list is empty or the index is negative, return 0
+        if (myLList.First == null || n < 0)
         {
             return 0;
         }
@@ -21,7 +21,7 @@ class LList
             currentIndex++;
         }
 
-        // If the desired index is greater than the number of nodes in the list, return 0
+        // If the desired index is greater than or equal to the number of nodes in the list, return 0
         if (currentIndex < n)
         {
             return 0;
