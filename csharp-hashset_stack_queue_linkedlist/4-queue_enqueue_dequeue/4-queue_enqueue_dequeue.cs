@@ -17,25 +17,21 @@ class MyQueue
         aQueue.Enqueue(newItem);
 
         bool containsSearch = false;
-        Queue<string> tempQueue = new Queue<string>();
-
-        while (aQueue.Count > 0)
+        int count = aQueue.Count;
+        for (int i = 0; i < count; i++)
         {
             string item = aQueue.Dequeue();
-            if (item == search)
+            if (containsSearch)
+            {
+                aQueue.Enqueue(item);
+            }
+            else if (item == search)
             {
                 containsSearch = true;
-                break;
             }
-            tempQueue.Enqueue(item);
         }
 
         Console.WriteLine($"Queue contains \"{search}\": {containsSearch}");
-
-        while (tempQueue.Count > 0)
-        {
-            aQueue.Enqueue(tempQueue.Dequeue());
-        }
 
         return aQueue;
     }
