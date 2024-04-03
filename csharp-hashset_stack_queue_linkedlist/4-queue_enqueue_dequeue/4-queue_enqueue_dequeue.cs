@@ -11,7 +11,6 @@ class MyQueue
         {
             Console.WriteLine("Queue is empty");
             return aQueue;
-	    Console.WriteLine("C#");
         }
         
         Console.WriteLine($"First item: {aQueue.Peek()}");
