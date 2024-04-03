@@ -1,55 +1,54 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections;
 
-class MyQueue
-{
-    public static Queue<string> Info(Queue<string> aQueue, string newItem, string search)
+class MyQueue{
+
+    static void Main(string[] args)
     {
+        Queue<string> aQueue = new Queue<string>();
+
+        aQueue.Enqueue("C");
+        aQueue.Enqueue("HTML");
+        aQueue.Enqueue("Javascript");
+        aQueue.Enqueue("Python");
+        aQueue.Enqueue("React");
+        aQueue.Enqueue("Ruby");
+
+        foreach (string item in aQueue)
+            Console.WriteLine(item);
+
+        Console.WriteLine("------");
+
+        MyQueue.Info(aQueue, "C#", "Javascript");
+
+        Console.WriteLine("------");
+
+        foreach (string item in aQueue)
+            Console.WriteLine(item);
+    }
+
+    public static Queue<string> Info(Queue<string> aQueue, string newItem, string search){
         Console.WriteLine($"Number of items: {aQueue.Count}");
 
-        if (aQueue.Count == 0)
-        {
+        if(aQueue.Count == 0){
             Console.WriteLine("Queue is empty");
-            return aQueue;
+        }else{
+             Console.WriteLine($"First item: {aQueue.Peek()}");
         }
 
-        string firstItem = aQueue.Peek();
-        Console.WriteLine($"First item: {firstItem}");
+        aQueue.Enqueue(newItem);
 
-        bool containsSearch = aQueue.Contains(search);
-        Console.WriteLine($"Queue contains \"{search}\": {containsSearch}");
+        if(aQueue.Contains(search)){
+            Console.WriteLine($"Queue contains \"{search}\": True");
+        }
 
-        Queue<string> updatedQueue = new Queue<string>();
 
-        // Process each item in the original queue
-        while (aQueue.Count > 0)
-        {
-            string currentItem = aQueue.Dequeue();
-
-            if (currentItem == search && containsSearch)
-            {
-                // Skip adding the search item back to the queue
-                containsSearch = false;
-            }
-            else
-            {
-                updatedQueue.Enqueue(currentItem);
+        for(int i = 0; i <= aQueue.Count; i++){
+            if(aQueue.Contains(search)){
+                string temp = aQueue.Dequeue();
             }
         }
 
-        // Add the new item if it's not already in the queue
-        if (!containsSearch)
-        {
-            updatedQueue.Enqueue(newItem);
-        }
-
-        // Print the updated queue
-        foreach (string item in updatedQueue)
-        {
-            Console.WriteLine(item);
-        }
-
-        // Return the updated queue
-        return updatedQueue;
+        return aQueue;
+       
     }
 }
