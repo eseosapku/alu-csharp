@@ -3,36 +3,24 @@ using System.Collections.Generic;
 
 class LList
 {
-    public static void Delete(LinkedList<int> myLList, int index)
+    public static LinkedListNode<int> Insert(LinkedList<int> myLList, int n)
     {
-        if (myLList.First == null || index < 0)
+        // If the list is empty or n is less than the first node's value, insert at the beginning
+        if (myLList.First == null || n < myLList.First.Value)
         {
-            return; // No elements in the list or invalid index, do nothing
+            myLList.AddFirst(n);
+            return myLList.First;
         }
 
-        if (index == 0)
+        // Traverse the list to find the correct position to insert the new node
+        LinkedListNode<int> currentNode = myLList.First;
+        while (currentNode.Next != null && currentNode.Next.Value < n)
         {
-            myLList.RemoveFirst(); // Remove the first node if index is 0
-            return;
-        }
-
-        LinkedListNode<int> previousNode = myLList.First;
-        LinkedListNode<int>? currentNode = previousNode.Next;
-
-        // Traverse the list until the desired index or the end of the list is reached
-        for (int i = 1; i < index && currentNode != null; i++)
-        {
-            previousNode = currentNode;
             currentNode = currentNode.Next;
         }
 
-        // If the current node is null, index is out of range
-        if (currentNode == null)
-        {
-            return;
-        }
-
-        // Remove the node at the given index
-        myLList.Remove(currentNode);
+        // Insert the new node after currentNode
+        LinkedListNode<int> newNode = myLList.AddAfter(currentNode, n);
+        return newNode;
     }
 }
