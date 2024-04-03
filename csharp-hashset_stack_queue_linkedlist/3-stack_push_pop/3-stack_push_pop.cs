@@ -13,7 +13,7 @@ class MyStack
         }
         else
         {
-            Console.WriteLine($"Top item:{aStack.Peek()}");
+            Console.WriteLine($"Top item: {aStack.Peek()}");
         }
         bool containsSearch = aStack.Contains(search);
         Console.WriteLine($"Stack contains \"{search}\": {containsSearch}");
