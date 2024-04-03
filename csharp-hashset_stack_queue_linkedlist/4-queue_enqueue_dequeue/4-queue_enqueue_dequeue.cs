@@ -30,10 +30,11 @@ class MyQueue
             {
                 // Skip adding the search item back to the queue
                 containsSearch = false;
-                continue;
             }
-
-            updatedQueue.Enqueue(currentItem);
+            else
+            {
+                updatedQueue.Enqueue(currentItem);
+            }
         }
 
         // Add the new item if it's not already in the queue
