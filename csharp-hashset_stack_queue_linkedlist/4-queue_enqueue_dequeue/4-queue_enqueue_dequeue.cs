@@ -1,30 +1,50 @@
 ﻿using System;
 using System.Collections.Generic;
 
-public static class MyQueue
+class MyQueue
 {
     public static Queue<string> Info(Queue<string> aQueue, string newItem, string search)
     {
-        Console.WriteLine($"Number of items: {aQueue.Count}");
+        int count = aQueue.Count;
+        bool found = false;
 
-        if (aQueue.Count > 0)
-            Console.WriteLine($"First item: {aQueue.Peek()}");
-        else
+        Console.WriteLine($"Number of items: {count}");
+
+        if (count == 0)
+        {
             Console.WriteLine("Queue is empty");
+        }
+        else
+        {
+            Console.WriteLine($"First item: {aQueue.Peek()}");
+        }
+
+        while (count > 0)
+        {
+            string item = aQueue.Dequeue();
+            count--;
+
+            if (item == search)
+            {
+                found = true;
+                break;
+            }
+        }
 
         aQueue.Enqueue(newItem);
 
-        bool containsSearch = aQueue.Contains(search);
-        Console.WriteLine($"Queue contains \"{search}\": {containsSearch}");
+        Console.WriteLine($"Queue contains \"{search}\": {found}");
 
-        if (containsSearch)
+        // Add the dequeued elements back to the queue
+        foreach (string item in aQueue)
         {
-            while (aQueue.Count > 0 && aQueue.Peek() != search)
-            {
-                aQueue.Dequeue();
-            }
-            if (aQueue.Count > 0)
-                aQueue.Dequeue(); // Remove the item containing the search string
+            aQueue.Enqueue(item);
+        }
+
+        // Clear the elements that were previously dequeued
+        for (int i = 0; i < count; i++)
+        {
+            aQueue.Dequeue();
         }
 
         return aQueue;
