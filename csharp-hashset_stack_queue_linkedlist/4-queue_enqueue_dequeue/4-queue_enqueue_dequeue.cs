@@ -23,22 +23,17 @@ class MyQueue
         Queue<string> tempQueue = new Queue<string>();
 
         // Dequeue all items and check for search item
-        bool foundSearchItem = false;
         while (aQueue.Count > 0)
         {
             string currentItem = aQueue.Dequeue();
-            if (currentItem == search)
-            {
-                foundSearchItem = true;
-            }
-            else
+            if (currentItem != search)
             {
                 tempQueue.Enqueue(currentItem);
             }
         }
 
         // If search item not found, add new item
-        if (!foundSearchItem)
+        if (!containsSearch)
         {
             aQueue.Enqueue(newItem);
         }
