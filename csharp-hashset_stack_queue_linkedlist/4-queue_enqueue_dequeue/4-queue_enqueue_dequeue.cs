@@ -26,15 +26,9 @@ class MyQueue
         {
             string currentItem = aQueue.Dequeue();
 
-            if (currentItem == search && !containsSearch)
+            if (currentItem == search)
             {
-                updatedQueue.Enqueue(currentItem);
-                containsSearch = true; // Update containsSearch as we found the search item
-                break; // No need to process further
-            }
-            else if (currentItem == search)
-            {
-                // Do not add the search item back to the queue
+                // Skip adding the search item back to the queue
                 continue;
             }
 
