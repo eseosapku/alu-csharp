@@ -3,30 +3,6 @@ using System.Collections.Generic;
 
 class MyQueue
 {
-    static void Main(string[] args)
-    {
-        Queue<string> aQueue = new Queue<string>();
-
-        aQueue.Enqueue("C");
-        aQueue.Enqueue("HTML");
-        aQueue.Enqueue("Javascript");
-        aQueue.Enqueue("Python");
-        aQueue.Enqueue("React");
-        aQueue.Enqueue("Ruby");
-
-        foreach (string item in aQueue)
-            Console.WriteLine(item);
-
-        Console.WriteLine("------");
-
-        MyQueue.Info(aQueue, "C#", "Javascript");
-
-        Console.WriteLine("------");
-
-        foreach (string item in aQueue)
-            Console.WriteLine(item);
-    }
-
     public static Queue<string> Info(Queue<string> aQueue, string newItem, string search)
     {
         Console.WriteLine($"Number of items: {aQueue.Count}");
@@ -34,26 +10,46 @@ class MyQueue
         if (aQueue.Count == 0)
         {
             Console.WriteLine("Queue is empty");
-        }
-        else
-        {
-            Console.WriteLine($"First item: {aQueue.Peek()}");
+            return aQueue;
         }
 
-        aQueue.Enqueue(newItem);
+        string firstItem = aQueue.Peek();
+        Console.WriteLine($"First item: {firstItem}");
 
-        if (aQueue.Contains(search))
+        bool containsSearch = aQueue.Contains(search);
+        Console.WriteLine($"Queue contains \"{search}\": {containsSearch}");
+
+        Queue<string> updatedQueue = new Queue<string>();
+
+        // Process each item in the original queue
+        while (aQueue.Count > 0)
         {
-            Console.WriteLine($"Queue contains \"{search}\": True");
+            string currentItem = aQueue.Dequeue();
 
-            while (aQueue.Peek() != search)
+            if (currentItem == search && containsSearch)
             {
-                aQueue.Dequeue();
+                // Skip adding the search item back to the queue
+                containsSearch = false;
             }
-
-            aQueue.Dequeue(); // Dequeue the element containing the search item
+            else
+            {
+                updatedQueue.Enqueue(currentItem);
+            }
         }
 
-        return aQueue;
+        // Add the new item if it's not already in the queue
+        if (!containsSearch)
+        {
+            updatedQueue.Enqueue(newItem);
+        }
+
+        // Print the updated queue
+        foreach (string item in updatedQueue)
+        {
+            Console.WriteLine(item);
+        }
+
+        // Return the updated queue
+        return updatedQueue;
     }
 }
