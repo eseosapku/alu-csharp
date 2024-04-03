@@ -26,9 +26,10 @@ class MyQueue
         {
             string currentItem = aQueue.Dequeue();
 
-            if (currentItem == search)
+            if (currentItem == search && containsSearch)
             {
                 // Skip adding the search item back to the queue
+                containsSearch = false;
                 continue;
             }
 
