@@ -22,6 +22,6 @@ public class Dictionary
             }
         }
 
-        return bestKey;
+        return bestKey ?? "None";
     }
 }
