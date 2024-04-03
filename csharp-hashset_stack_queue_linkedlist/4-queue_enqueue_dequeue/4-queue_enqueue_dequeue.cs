@@ -6,33 +6,41 @@ class MyQueue
     public static Queue<string> Info(Queue<string> aQueue, string newItem, string search)
     {
         Console.WriteLine($"Number of items: {aQueue.Count}");
-        
+
         if (aQueue.Count == 0)
         {
             Console.WriteLine("Queue is empty");
             return aQueue;
         }
-        
-        Console.WriteLine($"First item: {aQueue.Peek()}");
-        aQueue.Enqueue(newItem);
 
-        bool containsSearch = false;
-        int count = aQueue.Count;
-        for (int i = 0; i < count; i++)
-        {
-            string item = aQueue.Dequeue();
-            if (containsSearch)
-            {
-                aQueue.Enqueue(item);
-            }
-            else if (item == search)
-            {
-                containsSearch = true;
-            }
-        }
+        Console.WriteLine($"First item: {aQueue.Peek()}");
+
+        bool containsSearch = aQueue.Contains(search);
 
         Console.WriteLine($"Queue contains \"{search}\": {containsSearch}");
 
-        return aQueue;
+        if (!containsSearch)
+        {
+            Console.WriteLine("Search item not found, skipping the search item.");
+        }
+
+        // Rebuild the queue
+        Queue<string> rebuiltQueue = new Queue<string>();
+        foreach (var item in aQueue)
+        {
+            if (containsSearch && item == search)
+            {
+                break;
+            }
+            rebuiltQueue.Enqueue(item);
+        }
+
+        // Add new item if search item was found
+        if (!containsSearch)
+        {
+            rebuiltQueue.Enqueue(newItem);
+        }
+
+        return rebuiltQueue;
     }
 }
