@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("4-queue_enqueue_dequeue")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0a41ed8152bdefd5739c2815eff46ee28e165afe")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a03c92de95bae361fcc6e1acb529946fded2ca9b")]
 [assembly: System.Reflection.AssemblyProductAttribute("4-queue_enqueue_dequeue")]
 [assembly: System.Reflection.AssemblyTitleAttribute("4-queue_enqueue_dequeue")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

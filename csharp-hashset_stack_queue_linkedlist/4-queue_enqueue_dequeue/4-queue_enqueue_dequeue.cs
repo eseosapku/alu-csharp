@@ -1,7 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections.Generic;
 
-class MyQueue{
-
+class MyQueue
+{
     static void Main(string[] args)
     {
         Queue<string> aQueue = new Queue<string>();
@@ -26,29 +27,33 @@ class MyQueue{
             Console.WriteLine(item);
     }
 
-    public static Queue<string> Info(Queue<string> aQueue, string newItem, string search){
+    public static Queue<string> Info(Queue<string> aQueue, string newItem, string search)
+    {
         Console.WriteLine($"Number of items: {aQueue.Count}");
 
-        if(aQueue.Count == 0){
+        if (aQueue.Count == 0)
+        {
             Console.WriteLine("Queue is empty");
-        }else{
-             Console.WriteLine($"First item: {aQueue.Peek()}");
+        }
+        else
+        {
+            Console.WriteLine($"First item: {aQueue.Peek()}");
         }
 
         aQueue.Enqueue(newItem);
 
-        if(aQueue.Contains(search)){
+        if (aQueue.Contains(search))
+        {
             Console.WriteLine($"Queue contains \"{search}\": True");
-        }
 
-
-        for(int i = 0; i <= aQueue.Count; i++){
-            if(aQueue.Contains(search)){
-                string temp = aQueue.Dequeue();
+            while (aQueue.Peek() != search)
+            {
+                aQueue.Dequeue();
             }
+
+            aQueue.Dequeue(); // Dequeue the element containing the search item
         }
 
         return aQueue;
-       
     }
 }
