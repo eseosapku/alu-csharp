@@ -7,13 +7,13 @@ class LList
     {
         LinkedListNode<int> newNode = new LinkedListNode<int>(n);
 
-        if (myLList.First == null || n <= myLList.First.Value)
+        if (myLList.First == null || n <= myLList.First!.Value)
         {
             myLList.AddFirst(newNode);
             return newNode;
         }
 
-        LinkedListNode<int> current = myLList.First;
+        LinkedListNode<int>? current = myLList.First;
 
         while (current.Next != null && current.Next.Value < n)
         {
