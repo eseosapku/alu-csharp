@@ -10,7 +10,6 @@ class MyQueue
         if (aQueue.Count == 0)
         {
             Console.WriteLine("Queue is empty");
-	    Console.WriteLine($"Queue contains \"{search}\": {containsSearch}");
             return aQueue;
 	    Console.WriteLine("C#");
         }
