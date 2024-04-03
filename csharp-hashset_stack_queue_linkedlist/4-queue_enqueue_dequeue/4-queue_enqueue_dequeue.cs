@@ -19,31 +19,34 @@ class MyQueue
         bool containsSearch = aQueue.Contains(search);
         Console.WriteLine($"Queue contains \"{search}\": {containsSearch}");
 
-        Queue<string> rebuiltQueue = new Queue<string>();
+        // Create a temporary queue to store items
+        Queue<string> tempQueue = new Queue<string>();
+
+        // Dequeue all items and check for search item
         bool foundSearchItem = false;
-        
-        // Dequeue and check each item
         while (aQueue.Count > 0)
         {
             string currentItem = aQueue.Dequeue();
             if (currentItem == search)
             {
                 foundSearchItem = true;
-                continue;
             }
-            rebuiltQueue.Enqueue(currentItem);
+            else
+            {
+                tempQueue.Enqueue(currentItem);
+            }
         }
 
-        // Rebuild the queue with the remaining items
-        foreach (var item in rebuiltQueue)
-        {
-            aQueue.Enqueue(item);
-        }
-
-        // Add new item if search item was found
+        // If search item not found, add new item
         if (!foundSearchItem)
         {
             aQueue.Enqueue(newItem);
+        }
+
+        // Re-enqueue items from temporary queue
+        while (tempQueue.Count > 0)
+        {
+            aQueue.Enqueue(tempQueue.Dequeue());
         }
 
         return aQueue;
