@@ -32,8 +32,7 @@ class MyQueue
             }
         }
 
-        Console.WriteLine($"Queue contains \"{search}\": {containsSearch}");
-
+       
         return aQueue;
     }
 }
