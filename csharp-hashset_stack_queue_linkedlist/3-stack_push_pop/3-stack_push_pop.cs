@@ -24,12 +24,13 @@ public static class MyStack
         {
             Stack<string> tempStack = new Stack<string>();
 
+            bool found = false;
             while (aStack.Count > 0)
             {
                 string item = aStack.Pop();
-                if (item == search)
+                if (found || item == search)
                 {
-                    break;
+                    found = true;
                 }
                 else
                 {
