@@ -30,7 +30,7 @@ class MyQueue
             // If the current item matches the search and it's the first occurrence
             if (currentItem == search && containsSearch)
             {
-                // Skip printing and adding the search item back to the queue
+                // Skip adding the search item back to the queue
                 containsSearch = false;
             }
             else
@@ -49,7 +49,6 @@ class MyQueue
         // Print the updated queue
         foreach (string item in updatedQueue)
         {
-            Console.WriteLine(item);
             // Add the item back to the original queue
             aQueue.Enqueue(item);
         }
