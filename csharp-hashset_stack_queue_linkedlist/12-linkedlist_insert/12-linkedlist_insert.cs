@@ -9,7 +9,7 @@ class LList
         if (myLList.First == null || n < myLList.First.Value)
         {
             myLList.AddFirst(n);
-            return myLList.First;
+            return myLList.First; // Ensure we always return a non-null value
         }
 
         // Traverse the list to find the correct position to insert the new node
@@ -21,6 +21,6 @@ class LList
 
         // Insert the new node after currentNode
         LinkedListNode<int> newNode = myLList.AddAfter(currentNode, n);
-        return newNode;
+        return newNode; // Ensure we always return a non-null value
     }
 }
