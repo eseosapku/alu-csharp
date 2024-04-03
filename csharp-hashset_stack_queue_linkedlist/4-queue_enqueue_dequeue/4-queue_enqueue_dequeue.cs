@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 
 class MyQueue
@@ -23,14 +22,15 @@ class MyQueue
         Queue<string> updatedQueue = new Queue<string>();
 
         // Process each item in the original queue
+        bool foundSearch = false;
         while (aQueue.Count > 0)
         {
             string currentItem = aQueue.Dequeue();
 
-            if (currentItem == search && containsSearch)
+            if (currentItem == search && !foundSearch)
             {
-                // Skip adding the search item back to the queue
-                containsSearch = false;
+                // Skip printing and adding the search item back to the queue
+                foundSearch = true;
             }
             else
             {
