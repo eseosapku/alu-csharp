@@ -5,15 +5,20 @@ class LList
 {
     public static int FindNode(LinkedList<int> myLList, int value)
     {
-        int index = 0;
+        if (myLList == null || myLList.First == null)
+        {
+            // If the linked list is null or empty, return -1
+            return -1;
+        }
+
         LinkedListNode<int> current = myLList.First;
 
-        // Iterate through the linked list
+        int index = 0;
         while (current != null)
         {
-            // If the current node's value matches the target value, return its index
             if (current.Value == value)
             {
+                // Return the index of the node if the value is found
                 return index;
             }
 
