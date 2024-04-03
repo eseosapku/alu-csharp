@@ -26,17 +26,20 @@ class MyQueue
 
         // Rebuild the queue
         Queue<string> rebuiltQueue = new Queue<string>();
+        bool foundSearchItem = false;
         foreach (var item in aQueue)
         {
-            if (containsSearch && item == search)
+            if (!foundSearchItem && containsSearch && item == search)
             {
-                break;
+                foundSearchItem = true;
+                continue;
             }
+
             rebuiltQueue.Enqueue(item);
         }
 
         // Add new item if search item was found
-        if (!containsSearch)
+        if (!foundSearchItem && !containsSearch)
         {
             rebuiltQueue.Enqueue(newItem);
         }
