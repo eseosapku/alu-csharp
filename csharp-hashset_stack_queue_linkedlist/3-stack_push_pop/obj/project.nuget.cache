@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "Qxia5Tg8GBxLX567y4Zaz48W1NLpR7XZ4u6FRTK414oGT1vwpwTM6JpogExqgJRYEHgMUe0cCllwzXUEofZvcA==",
+  "dgSpecHash": "ij9IoKdbD8xDp6ce4Z0OQ9RL48KhSf4pmcgRj83bRRKUv09OVqCD2ZkJPrqgq141fUhFRG0nbk4oTS+5co+jYA==",
   "success": true,
   "projectFilePath": "C:\\Users\\musev\\alu-csharp\\csharp-hashset_stack_queue_linkedlist\\3-stack_push_pop\\3-stack_push_pop.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\musev\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.17\\microsoft.netcore.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\musev\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.17\\microsoft.windowsdesktop.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\musev\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.17\\microsoft.aspnetcore.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\musev\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.17\\microsoft.netcore.app.host.win-x64.7.0.17.nupkg.sha512"
+  ],
   "logs": []
 }
