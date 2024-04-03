@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "hOZFf2GO0brwEB/RJD+t6LwpwCE4NPDQusZX4KVAEToO+WFga712m8AxUaLO4dFX20rKPH1XXvsI2XHToSm49g==",
+  "dgSpecHash": "O6RxeqWIq/FvBdc6vXGJlA79zaywVoDD+5DHvPakKhXlguGvFFKUoW70nSbsDxktlFAaHfmJgxuFfu8sWXF5uQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\musev\\alu-csharp\\csharp-hashset_stack_queue_linkedlist\\4-queue_enqueue_dequeue\\4-queue_enqueue_dequeue.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\musev\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.17\\microsoft.netcore.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\musev\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.17\\microsoft.windowsdesktop.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\musev\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.17\\microsoft.aspnetcore.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\musev\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.17\\microsoft.netcore.app.host.win-x64.7.0.17.nupkg.sha512"
+  ],
   "logs": []
 }
