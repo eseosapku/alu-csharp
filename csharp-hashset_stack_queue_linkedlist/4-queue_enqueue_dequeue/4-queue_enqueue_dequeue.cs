@@ -42,7 +42,14 @@ class MyQueue
             updatedQueue.Enqueue(newItem);
         }
 
+        // Print the updated queue
+        foreach (string item in updatedQueue)
+        {
+            Console.WriteLine(item);
+        }
+
         // Return the updated queue
         return updatedQueue;
     }
 }
+
