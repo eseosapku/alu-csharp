@@ -1,0 +1,15 @@
+C:\Users\musev\alu-csharp\csharp-hashset_stack_queue_linkedlist\1-common_elements\bin\Debug\net8.0\1-common_elements.exe
+C:\Users\musev\alu-csharp\csharp-hashset_stack_queue_linkedlist\1-common_elements\bin\Debug\net8.0\1-common_elements.deps.json
+C:\Users\musev\alu-csharp\csharp-hashset_stack_queue_linkedlist\1-common_elements\bin\Debug\net8.0\1-common_elements.runtimeconfig.json
+C:\Users\musev\alu-csharp\csharp-hashset_stack_queue_linkedlist\1-common_elements\bin\Debug\net8.0\1-common_elements.dll
+C:\Users\musev\alu-csharp\csharp-hashset_stack_queue_linkedlist\1-common_elements\bin\Debug\net8.0\1-common_elements.pdb
+C:\Users\musev\alu-csharp\csharp-hashset_stack_queue_linkedlist\1-common_elements\obj\Debug\net8.0\1-common_elements.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\musev\alu-csharp\csharp-hashset_stack_queue_linkedlist\1-common_elements\obj\Debug\net8.0\1-common_elements.AssemblyInfoInputs.cache
+C:\Users\musev\alu-csharp\csharp-hashset_stack_queue_linkedlist\1-common_elements\obj\Debug\net8.0\1-common_elements.AssemblyInfo.cs
+C:\Users\musev\alu-csharp\csharp-hashset_stack_queue_linkedlist\1-common_elements\obj\Debug\net8.0\1-common_elements.csproj.CoreCompileInputs.cache
+C:\Users\musev\alu-csharp\csharp-hashset_stack_queue_linkedlist\1-common_elements\obj\Debug\net8.0\1-common_elements.sourcelink.json
+C:\Users\musev\alu-csharp\csharp-hashset_stack_queue_linkedlist\1-common_elements\obj\Debug\net8.0\1-common_elements.dll
+C:\Users\musev\alu-csharp\csharp-hashset_stack_queue_linkedlist\1-common_elements\obj\Debug\net8.0\refint\1-common_elements.dll
+C:\Users\musev\alu-csharp\csharp-hashset_stack_queue_linkedlist\1-common_elements\obj\Debug\net8.0\1-common_elements.pdb
+C:\Users\musev\alu-csharp\csharp-hashset_stack_queue_linkedlist\1-common_elements\obj\Debug\net8.0\1-common_elements.genruntimeconfig.cache
+C:\Users\musev\alu-csharp\csharp-hashset_stack_queue_linkedlist\1-common_elements\obj\Debug\net8.0\ref\1-common_elements.dll

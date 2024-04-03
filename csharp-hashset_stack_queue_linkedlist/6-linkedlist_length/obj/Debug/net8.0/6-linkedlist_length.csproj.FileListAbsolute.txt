@@ -1,0 +1,15 @@
+C:\Users\musev\alu-csharp\csharp-hashset_stack_queue_linkedlist\6-linkedlist_length\bin\Debug\net8.0\6-linkedlist_length.exe
+C:\Users\musev\alu-csharp\csharp-hashset_stack_queue_linkedlist\6-linkedlist_length\bin\Debug\net8.0\6-linkedlist_length.deps.json
+C:\Users\musev\alu-csharp\csharp-hashset_stack_queue_linkedlist\6-linkedlist_length\bin\Debug\net8.0\6-linkedlist_length.runtimeconfig.json
+C:\Users\musev\alu-csharp\csharp-hashset_stack_queue_linkedlist\6-linkedlist_length\bin\Debug\net8.0\6-linkedlist_length.dll
+C:\Users\musev\alu-csharp\csharp-hashset_stack_queue_linkedlist\6-linkedlist_length\bin\Debug\net8.0\6-linkedlist_length.pdb
+C:\Users\musev\alu-csharp\csharp-hashset_stack_queue_linkedlist\6-linkedlist_length\obj\Debug\net8.0\6-linkedlist_length.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\musev\alu-csharp\csharp-hashset_stack_queue_linkedlist\6-linkedlist_length\obj\Debug\net8.0\6-linkedlist_length.AssemblyInfoInputs.cache
+C:\Users\musev\alu-csharp\csharp-hashset_stack_queue_linkedlist\6-linkedlist_length\obj\Debug\net8.0\6-linkedlist_length.AssemblyInfo.cs
+C:\Users\musev\alu-csharp\csharp-hashset_stack_queue_linkedlist\6-linkedlist_length\obj\Debug\net8.0\6-linkedlist_length.csproj.CoreCompileInputs.cache
+C:\Users\musev\alu-csharp\csharp-hashset_stack_queue_linkedlist\6-linkedlist_length\obj\Debug\net8.0\6-linkedlist_length.sourcelink.json
+C:\Users\musev\alu-csharp\csharp-hashset_stack_queue_linkedlist\6-linkedlist_length\obj\Debug\net8.0\6-linkedlist_length.dll
+C:\Users\musev\alu-csharp\csharp-hashset_stack_queue_linkedlist\6-linkedlist_length\obj\Debug\net8.0\refint\6-linkedlist_length.dll
+C:\Users\musev\alu-csharp\csharp-hashset_stack_queue_linkedlist\6-linkedlist_length\obj\Debug\net8.0\6-linkedlist_length.pdb
+C:\Users\musev\alu-csharp\csharp-hashset_stack_queue_linkedlist\6-linkedlist_length\obj\Debug\net8.0\6-linkedlist_length.genruntimeconfig.cache
+C:\Users\musev\alu-csharp\csharp-hashset_stack_queue_linkedlist\6-linkedlist_length\obj\Debug\net8.0\ref\6-linkedlist_length.dll
