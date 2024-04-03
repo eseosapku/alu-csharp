@@ -13,39 +13,37 @@ class MyQueue
             return aQueue;
         }
 
-        string firstItem = aQueue.Peek();
-        Console.WriteLine($"First item: {firstItem}");
+        Console.WriteLine($"First item: {aQueue.Peek()}");
 
         bool containsSearch = aQueue.Contains(search);
+
         Console.WriteLine($"Queue contains \"{search}\": {containsSearch}");
 
+        if (!containsSearch)
+        {
+            Console.WriteLine("Search item not found, skipping the search item.");
+        }
+
+        // Rebuild the queue
         Queue<string> rebuiltQueue = new Queue<string>();
         bool foundSearchItem = false;
-        
-        // Dequeue and check each item
-        while (aQueue.Count > 0)
+        foreach (var item in aQueue)
         {
-            string currentItem = aQueue.Dequeue();
-            if (currentItem == search)
+            if (!foundSearchItem && containsSearch && item == search)
             {
                 foundSearchItem = true;
                 continue;
             }
-            rebuiltQueue.Enqueue(currentItem);
-        }
 
-        // Rebuild the queue with the remaining items
-        foreach (var item in rebuiltQueue)
-        {
-            aQueue.Enqueue(item);
+            rebuiltQueue.Enqueue(item);
         }
 
         // Add new item if search item was found
-        if (!foundSearchItem)
+        if (!foundSearchItem && !containsSearch)
         {
-            aQueue.Enqueue(newItem);
+            rebuiltQueue.Enqueue(newItem);
         }
 
-        return aQueue;
+        return rebuiltQueue;
     }
 }
