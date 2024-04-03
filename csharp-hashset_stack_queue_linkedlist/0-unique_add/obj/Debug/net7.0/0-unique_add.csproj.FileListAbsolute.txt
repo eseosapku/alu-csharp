@@ -1,0 +1,5 @@
+C:\Users\musev\alu-csharp\csharp-hashset_stack_queue_linkedlist\0-unique_add\obj\Debug\net7.0\0-unique_add.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\musev\alu-csharp\csharp-hashset_stack_queue_linkedlist\0-unique_add\obj\Debug\net7.0\0-unique_add.AssemblyInfoInputs.cache
+C:\Users\musev\alu-csharp\csharp-hashset_stack_queue_linkedlist\0-unique_add\obj\Debug\net7.0\0-unique_add.AssemblyInfo.cs
+C:\Users\musev\alu-csharp\csharp-hashset_stack_queue_linkedlist\0-unique_add\obj\Debug\net7.0\0-unique_add.csproj.CoreCompileInputs.cache
+C:\Users\musev\alu-csharp\csharp-hashset_stack_queue_linkedlist\0-unique_add\obj\Debug\net7.0\0-unique_add.sourcelink.json
