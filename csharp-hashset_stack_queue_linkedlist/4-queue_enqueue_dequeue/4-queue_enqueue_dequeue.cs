@@ -3,14 +3,14 @@ using System.Collections.Generic;
 
 class MyQueue
 {
-    public static Queue<string> Info(Queue<string> aQueue, string newItem, string search)
+    public static void Info(Queue<string> aQueue, string newItem, string search)
     {
         Console.WriteLine($"Number of items: {aQueue.Count}");
 
         if (aQueue.Count == 0)
         {
             Console.WriteLine("Queue is empty");
-            return aQueue;
+            return;
         }
 
         string firstItem = aQueue.Peek();
@@ -19,21 +19,23 @@ class MyQueue
         bool containsSearch = aQueue.Contains(search);
         Console.WriteLine($"Queue contains \"{search}\": {containsSearch}");
 
+        // Create a temporary queue to hold the updated items
         Queue<string> updatedQueue = new Queue<string>();
 
         // Process each item in the original queue
-        bool foundSearch = false;
         while (aQueue.Count > 0)
         {
             string currentItem = aQueue.Dequeue();
 
-            if (currentItem == search && !foundSearch)
+            // If the current item matches the search and it's the first occurrence
+            if (currentItem == search && containsSearch)
             {
                 // Skip printing and adding the search item back to the queue
-                foundSearch = true;
+                containsSearch = false;
             }
             else
             {
+                // Otherwise, add the current item to the updated queue
                 updatedQueue.Enqueue(currentItem);
             }
         }
@@ -48,9 +50,8 @@ class MyQueue
         foreach (string item in updatedQueue)
         {
             Console.WriteLine(item);
+            // Add the item back to the original queue
+            aQueue.Enqueue(item);
         }
-
-        // Return the updated queue
-        return updatedQueue;
     }
 }
