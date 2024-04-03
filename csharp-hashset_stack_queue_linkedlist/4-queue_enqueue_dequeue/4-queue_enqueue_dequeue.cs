@@ -5,48 +5,31 @@ class MyQueue
 {
     public static Queue<string> Info(Queue<string> aQueue, string newItem, string search)
     {
-        int count = aQueue.Count;
-        bool found = false;
-
-        Console.WriteLine($"Number of items: {count}");
-
-        if (count == 0)
+        Console.WriteLine($"Number of items: {aQueue.Count}");
+        if(aQueue.Count == 0)
         {
             Console.WriteLine("Queue is empty");
         }
         else
         {
-            Console.WriteLine($"First item: {aQueue.Peek()}");
+            Console.WriteLine($"First item:{aQueue.Peek()}");
         }
-
-        while (count > 0)
-        {
-            string item = aQueue.Dequeue();
-            count--;
-
-            if (item == search)
-            {
-                found = true;
-                break;
-            }
-        }
-
         aQueue.Enqueue(newItem);
 
-        Console.WriteLine($"Queue contains \"{search}\": {found}");
-
-        // Add the dequeued elements back to the queue
-        foreach (string item in aQueue)
+        bool containsSearch = aQueue.Contains(search);
+        if(containsSearch == true)
         {
-            aQueue.Enqueue(item);
+            Console.WriteLine($"Queue contains \"{search}\": {containsSearch}");
         }
+        for(int i = 0; i <= aQueue.Count; i++)
+         {
+            if(containsSearch == true)
+            {
+                aQueue.Dequeue();
+            }
+         }
+         return aQueue;
 
-        // Clear the elements that were previously dequeued
-        for (int i = 0; i < count; i++)
-        {
-            aQueue.Dequeue();
-        }
-
-        return aQueue;
     }
+
 }
