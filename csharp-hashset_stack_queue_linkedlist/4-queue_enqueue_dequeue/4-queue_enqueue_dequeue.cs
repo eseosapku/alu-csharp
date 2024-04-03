@@ -3,6 +3,34 @@ using System.Collections.Generic;
 
 class MyQueue
 {
+    public static void Main(string[] args)
+    {
+        Queue<string> aQueue = new Queue<string>();
+
+        aQueue.Enqueue("C");
+        aQueue.Enqueue("HTML");
+        aQueue.Enqueue("Javascript");
+        aQueue.Enqueue("Python");
+        aQueue.Enqueue("React");
+        aQueue.Enqueue("Ruby");
+
+        foreach (string item in aQueue)
+            Console.WriteLine(item);
+
+        Console.WriteLine("------");
+
+        MyQueue.Info(aQueue, "C#", "Javascript");
+
+        Console.WriteLine("------");
+
+        foreach (string item in aQueue)
+            Console.WriteLine(item);
+
+        // Additional case
+        Console.WriteLine("------");
+        MyQueue.Info(aQueue, "C#", "C");
+    }
+
     public static void Info(Queue<string> aQueue, string newItem, string search)
     {
         Console.WriteLine($"Number of items: {aQueue.Count}");
@@ -54,3 +82,4 @@ class MyQueue
         }
     }
 }
+
