@@ -6,7 +6,7 @@ public enum Rating
     Fair,
     Good,
     VeryGood,
-    Excellent
+    Excellent,
 }
 
 public struct Dog
