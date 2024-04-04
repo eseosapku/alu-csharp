@@ -1,0 +1,15 @@
+C:\Users\musev\alu-csharp\csharp-structs_enums\1-dog\bin\Debug\net8.0\1-dog.exe
+C:\Users\musev\alu-csharp\csharp-structs_enums\1-dog\bin\Debug\net8.0\1-dog.deps.json
+C:\Users\musev\alu-csharp\csharp-structs_enums\1-dog\bin\Debug\net8.0\1-dog.runtimeconfig.json
+C:\Users\musev\alu-csharp\csharp-structs_enums\1-dog\bin\Debug\net8.0\1-dog.dll
+C:\Users\musev\alu-csharp\csharp-structs_enums\1-dog\bin\Debug\net8.0\1-dog.pdb
+C:\Users\musev\alu-csharp\csharp-structs_enums\1-dog\obj\Debug\net8.0\1-dog.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\musev\alu-csharp\csharp-structs_enums\1-dog\obj\Debug\net8.0\1-dog.AssemblyInfoInputs.cache
+C:\Users\musev\alu-csharp\csharp-structs_enums\1-dog\obj\Debug\net8.0\1-dog.AssemblyInfo.cs
+C:\Users\musev\alu-csharp\csharp-structs_enums\1-dog\obj\Debug\net8.0\1-dog.csproj.CoreCompileInputs.cache
+C:\Users\musev\alu-csharp\csharp-structs_enums\1-dog\obj\Debug\net8.0\1-dog.sourcelink.json
+C:\Users\musev\alu-csharp\csharp-structs_enums\1-dog\obj\Debug\net8.0\1-dog.dll
+C:\Users\musev\alu-csharp\csharp-structs_enums\1-dog\obj\Debug\net8.0\refint\1-dog.dll
+C:\Users\musev\alu-csharp\csharp-structs_enums\1-dog\obj\Debug\net8.0\1-dog.pdb
+C:\Users\musev\alu-csharp\csharp-structs_enums\1-dog\obj\Debug\net8.0\1-dog.genruntimeconfig.cache
+C:\Users\musev\alu-csharp\csharp-structs_enums\1-dog\obj\Debug\net8.0\ref\1-dog.dll
