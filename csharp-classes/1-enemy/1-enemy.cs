@@ -22,5 +22,10 @@ namespace Enemies
                 health = value;
             }
         }
+
+        public int GetHealth()
+        {
+            return health;
+        }
     }
 }
