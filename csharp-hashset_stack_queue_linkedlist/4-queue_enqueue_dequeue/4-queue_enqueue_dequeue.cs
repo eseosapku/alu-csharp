@@ -7,7 +7,8 @@ class MyQueue
 
         if(aQueue.Count == 0){
             Console.WriteLine("Queue is empty");
-        }else{
+        }
+	else{
              Console.WriteLine($"First item: {aQueue.Peek()}");
         }
 
@@ -27,6 +28,10 @@ class MyQueue
                 aQueue.Enqueue(item);
             }
             else if (item == search)
+            {
+                containsSearch = true;
+            }
+	    else (item == search)
             {
                 containsSearch = true;
             }

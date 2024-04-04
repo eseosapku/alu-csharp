@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "U8wCjvztkaNIbjEBC1p/KOMcT3qS0vHMq7tpyMSAab7cr01S8EBE57VTIC7wGmdJt4HjNZjON7tCfYOxUmgLmQ==",
+  "dgSpecHash": "8DEe/EV5glEQDNlUAuyOfooidxN4l+9BmqoVQ2qgSG4h/z/6fFVUUeDMlM/ZYZKsj/H7IonEPm1OZGHHuAcP6w==",
   "success": true,
   "projectFilePath": "C:\\Users\\musev\\alu-csharp\\csharp-hello_world\\5-print_float\\5-print_float.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\musev\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.17\\microsoft.netcore.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\musev\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.17\\microsoft.windowsdesktop.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\musev\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.17\\microsoft.aspnetcore.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\musev\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.17\\microsoft.netcore.app.host.win-x64.7.0.17.nupkg.sha512"
+  ],
   "logs": []
 }

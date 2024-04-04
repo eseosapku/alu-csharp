@@ -10,7 +10,7 @@ class List {
             List<int> cacheList = new List<int>();
             for(int index = 0; index < size; index++){
             Console.Write(index);
-                if(index != size - 1) // Add space if it's not the last number
+                if(index != size - 1) 
                     Console.Write(" ");
                 cacheList.Add(index);
 	    }
