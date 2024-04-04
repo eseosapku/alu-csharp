@@ -3,7 +3,7 @@
 public enum Rating
 {
     Good,
-    VeryGood,
+    Great,
     Excellent,
 }
 
