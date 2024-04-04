@@ -4,6 +4,6 @@ public enum Rating
 {
     Good,
     VeryGood,
-    Excellent
+    Excellent,
 }
 
