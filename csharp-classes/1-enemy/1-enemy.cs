@@ -1,5 +1,4 @@
 ﻿using System;
-using Enemies;
 
 namespace Enemies
 {
@@ -24,4 +23,4 @@ namespace Enemies
             }
         }
     }
-
+}
