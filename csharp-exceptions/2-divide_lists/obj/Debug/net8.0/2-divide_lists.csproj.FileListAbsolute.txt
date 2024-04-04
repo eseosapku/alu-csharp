@@ -1,0 +1,15 @@
+C:\Users\musev\alu-csharp\csharp-exceptions\2-divide_lists\bin\Debug\net8.0\2-divide_lists.exe
+C:\Users\musev\alu-csharp\csharp-exceptions\2-divide_lists\bin\Debug\net8.0\2-divide_lists.deps.json
+C:\Users\musev\alu-csharp\csharp-exceptions\2-divide_lists\bin\Debug\net8.0\2-divide_lists.runtimeconfig.json
+C:\Users\musev\alu-csharp\csharp-exceptions\2-divide_lists\bin\Debug\net8.0\2-divide_lists.dll
+C:\Users\musev\alu-csharp\csharp-exceptions\2-divide_lists\bin\Debug\net8.0\2-divide_lists.pdb
+C:\Users\musev\alu-csharp\csharp-exceptions\2-divide_lists\obj\Debug\net8.0\2-divide_lists.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\musev\alu-csharp\csharp-exceptions\2-divide_lists\obj\Debug\net8.0\2-divide_lists.AssemblyInfoInputs.cache
+C:\Users\musev\alu-csharp\csharp-exceptions\2-divide_lists\obj\Debug\net8.0\2-divide_lists.AssemblyInfo.cs
+C:\Users\musev\alu-csharp\csharp-exceptions\2-divide_lists\obj\Debug\net8.0\2-divide_lists.csproj.CoreCompileInputs.cache
+C:\Users\musev\alu-csharp\csharp-exceptions\2-divide_lists\obj\Debug\net8.0\2-divide_lists.sourcelink.json
+C:\Users\musev\alu-csharp\csharp-exceptions\2-divide_lists\obj\Debug\net8.0\2-divide_lists.dll
+C:\Users\musev\alu-csharp\csharp-exceptions\2-divide_lists\obj\Debug\net8.0\refint\2-divide_lists.dll
+C:\Users\musev\alu-csharp\csharp-exceptions\2-divide_lists\obj\Debug\net8.0\2-divide_lists.pdb
+C:\Users\musev\alu-csharp\csharp-exceptions\2-divide_lists\obj\Debug\net8.0\2-divide_lists.genruntimeconfig.cache
+C:\Users\musev\alu-csharp\csharp-exceptions\2-divide_lists\obj\Debug\net8.0\ref\2-divide_lists.dll
