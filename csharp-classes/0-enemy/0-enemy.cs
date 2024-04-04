@@ -2,16 +2,17 @@
 
 namespace Enemies
 {
-	    /// <summary>
+    /// <summary>
     /// Represents a zombie entity.
     /// </summary>
     public class Zombie
     {
-        public int health;
-
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Zombie"/> class with default values.
+        /// </summary>
         public Zombie()
         {
-            health = 0;
+            // Constructor implementation
         }
     }
 }
