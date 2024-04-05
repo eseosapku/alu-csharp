@@ -2,81 +2,35 @@
 using System.Collections.Generic;
 using System.Reflection;
 
-using System;
-using System.Collections.Generic;
-using System.Reflection;
-
-public class Shape
+public class Obj
 {
-    public virtual int Area()
+    public static void Print(object myObj)
     {
-        throw new NotImplementedException("Area() is not implemented");
+        Type type = myObj.GetType();
+
+        Console.WriteLine($"{type.Name} Properties:");
+        foreach (PropertyInfo property in type.GetProperties())
+        {
+            Console.WriteLine(property.Name);
+        }
+
+        Console.WriteLine($"{type.Name} Methods:");
+        foreach (MethodInfo method in type.GetMethods())
+        {
+            Console.WriteLine(method.Name);
+        }
     }
 }
 
-public class Rectangle : Shape
+class Program
 {
-    private int width;
-    private int height;
-
-    public int Width
+    static void Main(string[] args)
     {
-        get => width;
-        set
-        {
-            if (value < 0)
-            {
-                throw new ArgumentException("Width must be greater than or equal to 0");
-            }
-            width = value;
-        }
-    }
+        var num = 10;
+        var myList = new List<int>();
 
-    public int Height
-    {
-        get => height;
-        set
-        {
-            if (value < 0)
-            {
-                throw new ArgumentException("Height must be greater than or equal to 0");
-            }
-            height = value;
-        }
-    }
-
-    public override int Area()
-    {
-        return Width * Height;
-    }
-
-    public override string ToString()
-    {
-        return $"[Rectangle] {Width} / {Height}";
-    }
-}
-
-public class Square : Rectangle
-{
-    private int size;
-
-    public int Size
-    {
-        get => size;
-        set
-        {
-            if (value < 0)
-            {
-                throw new ArgumentException("Size must be greater than or equal to 0");
-            }
-            size = value;
-            Width = value;
-            Height = value;
-        }
-    }
-
-    public override string ToString()
-    {
-        return $"[Square] {Size} / {Size}";
+        Obj.Print(num);
+        Console.WriteLine("-----------------");
+        Obj.Print(myList);
     }
 }
