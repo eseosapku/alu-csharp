@@ -20,4 +20,4 @@ class Obj
             Console.WriteLine(method.Name);
         }
     }
-}
+
