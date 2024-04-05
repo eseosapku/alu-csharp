@@ -1,17 +1,17 @@
 ﻿using System;
 
-namespace MyMath
+namespace  MyMath
 {
-   public static class Operations
+    public class Operations
     {
+
         /// <summary>
-        /// Adds two integers.
+        /// Returns addition of two integers
         /// </summary>
-        /// <param name="a">The first integer.</param>
-        /// <param name="b">The second integer.</param>
-        /// <returns>The sum of <paramref name="a"/> and <paramref name="b"/>.</returns>
-        public static int Add(int a, int b)
-        {
+        /// <param name="a"></param>
+        /// <param name="b"></param>
+        /// <returns></returns>
+        public static int Add(int a , int b){
             return a + b;
         }
     }
