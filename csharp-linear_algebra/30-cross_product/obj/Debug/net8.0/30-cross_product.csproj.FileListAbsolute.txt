@@ -1,0 +1,15 @@
+C:\Users\musev\alu-csharp\csharp-linear_algebra\30-cross_product\bin\Debug\net8.0\30-cross_product.exe
+C:\Users\musev\alu-csharp\csharp-linear_algebra\30-cross_product\bin\Debug\net8.0\30-cross_product.deps.json
+C:\Users\musev\alu-csharp\csharp-linear_algebra\30-cross_product\bin\Debug\net8.0\30-cross_product.runtimeconfig.json
+C:\Users\musev\alu-csharp\csharp-linear_algebra\30-cross_product\bin\Debug\net8.0\30-cross_product.dll
+C:\Users\musev\alu-csharp\csharp-linear_algebra\30-cross_product\bin\Debug\net8.0\30-cross_product.pdb
+C:\Users\musev\alu-csharp\csharp-linear_algebra\30-cross_product\obj\Debug\net8.0\30-cross_product.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\musev\alu-csharp\csharp-linear_algebra\30-cross_product\obj\Debug\net8.0\30-cross_product.AssemblyInfoInputs.cache
+C:\Users\musev\alu-csharp\csharp-linear_algebra\30-cross_product\obj\Debug\net8.0\30-cross_product.AssemblyInfo.cs
+C:\Users\musev\alu-csharp\csharp-linear_algebra\30-cross_product\obj\Debug\net8.0\30-cross_product.csproj.CoreCompileInputs.cache
+C:\Users\musev\alu-csharp\csharp-linear_algebra\30-cross_product\obj\Debug\net8.0\30-cross_product.sourcelink.json
+C:\Users\musev\alu-csharp\csharp-linear_algebra\30-cross_product\obj\Debug\net8.0\30-cross_product.dll
+C:\Users\musev\alu-csharp\csharp-linear_algebra\30-cross_product\obj\Debug\net8.0\refint\30-cross_product.dll
+C:\Users\musev\alu-csharp\csharp-linear_algebra\30-cross_product\obj\Debug\net8.0\30-cross_product.pdb
+C:\Users\musev\alu-csharp\csharp-linear_algebra\30-cross_product\obj\Debug\net8.0\30-cross_product.genruntimeconfig.cache
+C:\Users\musev\alu-csharp\csharp-linear_algebra\30-cross_product\obj\Debug\net8.0\ref\30-cross_product.dll

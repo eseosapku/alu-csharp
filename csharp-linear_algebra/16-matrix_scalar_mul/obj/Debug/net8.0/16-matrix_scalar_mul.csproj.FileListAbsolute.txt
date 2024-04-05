@@ -1,0 +1,15 @@
+C:\Users\musev\alu-csharp\csharp-linear_algebra\16-matrix_scalar_mul\bin\Debug\net8.0\16-matrix_scalar_mul.exe
+C:\Users\musev\alu-csharp\csharp-linear_algebra\16-matrix_scalar_mul\bin\Debug\net8.0\16-matrix_scalar_mul.deps.json
+C:\Users\musev\alu-csharp\csharp-linear_algebra\16-matrix_scalar_mul\bin\Debug\net8.0\16-matrix_scalar_mul.runtimeconfig.json
+C:\Users\musev\alu-csharp\csharp-linear_algebra\16-matrix_scalar_mul\bin\Debug\net8.0\16-matrix_scalar_mul.dll
+C:\Users\musev\alu-csharp\csharp-linear_algebra\16-matrix_scalar_mul\bin\Debug\net8.0\16-matrix_scalar_mul.pdb
+C:\Users\musev\alu-csharp\csharp-linear_algebra\16-matrix_scalar_mul\obj\Debug\net8.0\16-matrix_scalar_mul.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\musev\alu-csharp\csharp-linear_algebra\16-matrix_scalar_mul\obj\Debug\net8.0\16-matrix_scalar_mul.AssemblyInfoInputs.cache
+C:\Users\musev\alu-csharp\csharp-linear_algebra\16-matrix_scalar_mul\obj\Debug\net8.0\16-matrix_scalar_mul.AssemblyInfo.cs
+C:\Users\musev\alu-csharp\csharp-linear_algebra\16-matrix_scalar_mul\obj\Debug\net8.0\16-matrix_scalar_mul.csproj.CoreCompileInputs.cache
+C:\Users\musev\alu-csharp\csharp-linear_algebra\16-matrix_scalar_mul\obj\Debug\net8.0\16-matrix_scalar_mul.sourcelink.json
+C:\Users\musev\alu-csharp\csharp-linear_algebra\16-matrix_scalar_mul\obj\Debug\net8.0\16-matrix_scalar_mul.dll
+C:\Users\musev\alu-csharp\csharp-linear_algebra\16-matrix_scalar_mul\obj\Debug\net8.0\refint\16-matrix_scalar_mul.dll
+C:\Users\musev\alu-csharp\csharp-linear_algebra\16-matrix_scalar_mul\obj\Debug\net8.0\16-matrix_scalar_mul.pdb
+C:\Users\musev\alu-csharp\csharp-linear_algebra\16-matrix_scalar_mul\obj\Debug\net8.0\16-matrix_scalar_mul.genruntimeconfig.cache
+C:\Users\musev\alu-csharp\csharp-linear_algebra\16-matrix_scalar_mul\obj\Debug\net8.0\ref\16-matrix_scalar_mul.dll

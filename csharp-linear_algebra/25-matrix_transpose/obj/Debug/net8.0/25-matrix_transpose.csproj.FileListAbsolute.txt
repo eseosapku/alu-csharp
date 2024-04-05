@@ -1,0 +1,15 @@
+C:\Users\musev\alu-csharp\csharp-linear_algebra\25-matrix_transpose\bin\Debug\net8.0\25-matrix_transpose.exe
+C:\Users\musev\alu-csharp\csharp-linear_algebra\25-matrix_transpose\bin\Debug\net8.0\25-matrix_transpose.deps.json
+C:\Users\musev\alu-csharp\csharp-linear_algebra\25-matrix_transpose\bin\Debug\net8.0\25-matrix_transpose.runtimeconfig.json
+C:\Users\musev\alu-csharp\csharp-linear_algebra\25-matrix_transpose\bin\Debug\net8.0\25-matrix_transpose.dll
+C:\Users\musev\alu-csharp\csharp-linear_algebra\25-matrix_transpose\bin\Debug\net8.0\25-matrix_transpose.pdb
+C:\Users\musev\alu-csharp\csharp-linear_algebra\25-matrix_transpose\obj\Debug\net8.0\25-matrix_transpose.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\musev\alu-csharp\csharp-linear_algebra\25-matrix_transpose\obj\Debug\net8.0\25-matrix_transpose.AssemblyInfoInputs.cache
+C:\Users\musev\alu-csharp\csharp-linear_algebra\25-matrix_transpose\obj\Debug\net8.0\25-matrix_transpose.AssemblyInfo.cs
+C:\Users\musev\alu-csharp\csharp-linear_algebra\25-matrix_transpose\obj\Debug\net8.0\25-matrix_transpose.csproj.CoreCompileInputs.cache
+C:\Users\musev\alu-csharp\csharp-linear_algebra\25-matrix_transpose\obj\Debug\net8.0\25-matrix_transpose.sourcelink.json
+C:\Users\musev\alu-csharp\csharp-linear_algebra\25-matrix_transpose\obj\Debug\net8.0\25-matrix_transpose.dll
+C:\Users\musev\alu-csharp\csharp-linear_algebra\25-matrix_transpose\obj\Debug\net8.0\refint\25-matrix_transpose.dll
+C:\Users\musev\alu-csharp\csharp-linear_algebra\25-matrix_transpose\obj\Debug\net8.0\25-matrix_transpose.pdb
+C:\Users\musev\alu-csharp\csharp-linear_algebra\25-matrix_transpose\obj\Debug\net8.0\25-matrix_transpose.genruntimeconfig.cache
+C:\Users\musev\alu-csharp\csharp-linear_algebra\25-matrix_transpose\obj\Debug\net8.0\ref\25-matrix_transpose.dll

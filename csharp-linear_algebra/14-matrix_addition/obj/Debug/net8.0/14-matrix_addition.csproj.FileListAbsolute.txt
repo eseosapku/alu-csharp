@@ -1,0 +1,15 @@
+C:\Users\musev\alu-csharp\csharp-linear_algebra\14-matrix_addition\bin\Debug\net8.0\14-matrix_addition.exe
+C:\Users\musev\alu-csharp\csharp-linear_algebra\14-matrix_addition\bin\Debug\net8.0\14-matrix_addition.deps.json
+C:\Users\musev\alu-csharp\csharp-linear_algebra\14-matrix_addition\bin\Debug\net8.0\14-matrix_addition.runtimeconfig.json
+C:\Users\musev\alu-csharp\csharp-linear_algebra\14-matrix_addition\bin\Debug\net8.0\14-matrix_addition.dll
+C:\Users\musev\alu-csharp\csharp-linear_algebra\14-matrix_addition\bin\Debug\net8.0\14-matrix_addition.pdb
+C:\Users\musev\alu-csharp\csharp-linear_algebra\14-matrix_addition\obj\Debug\net8.0\14-matrix_addition.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\musev\alu-csharp\csharp-linear_algebra\14-matrix_addition\obj\Debug\net8.0\14-matrix_addition.AssemblyInfoInputs.cache
+C:\Users\musev\alu-csharp\csharp-linear_algebra\14-matrix_addition\obj\Debug\net8.0\14-matrix_addition.AssemblyInfo.cs
+C:\Users\musev\alu-csharp\csharp-linear_algebra\14-matrix_addition\obj\Debug\net8.0\14-matrix_addition.csproj.CoreCompileInputs.cache
+C:\Users\musev\alu-csharp\csharp-linear_algebra\14-matrix_addition\obj\Debug\net8.0\14-matrix_addition.sourcelink.json
+C:\Users\musev\alu-csharp\csharp-linear_algebra\14-matrix_addition\obj\Debug\net8.0\14-matrix_addition.dll
+C:\Users\musev\alu-csharp\csharp-linear_algebra\14-matrix_addition\obj\Debug\net8.0\refint\14-matrix_addition.dll
+C:\Users\musev\alu-csharp\csharp-linear_algebra\14-matrix_addition\obj\Debug\net8.0\14-matrix_addition.pdb
+C:\Users\musev\alu-csharp\csharp-linear_algebra\14-matrix_addition\obj\Debug\net8.0\14-matrix_addition.genruntimeconfig.cache
+C:\Users\musev\alu-csharp\csharp-linear_algebra\14-matrix_addition\obj\Debug\net8.0\ref\14-matrix_addition.dll

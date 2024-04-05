@@ -1,0 +1,15 @@
+C:\Users\musev\alu-csharp\csharp-linear_algebra\28-determinant\bin\Debug\net8.0\28-determinant.exe
+C:\Users\musev\alu-csharp\csharp-linear_algebra\28-determinant\bin\Debug\net8.0\28-determinant.deps.json
+C:\Users\musev\alu-csharp\csharp-linear_algebra\28-determinant\bin\Debug\net8.0\28-determinant.runtimeconfig.json
+C:\Users\musev\alu-csharp\csharp-linear_algebra\28-determinant\bin\Debug\net8.0\28-determinant.dll
+C:\Users\musev\alu-csharp\csharp-linear_algebra\28-determinant\bin\Debug\net8.0\28-determinant.pdb
+C:\Users\musev\alu-csharp\csharp-linear_algebra\28-determinant\obj\Debug\net8.0\28-determinant.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\musev\alu-csharp\csharp-linear_algebra\28-determinant\obj\Debug\net8.0\28-determinant.AssemblyInfoInputs.cache
+C:\Users\musev\alu-csharp\csharp-linear_algebra\28-determinant\obj\Debug\net8.0\28-determinant.AssemblyInfo.cs
+C:\Users\musev\alu-csharp\csharp-linear_algebra\28-determinant\obj\Debug\net8.0\28-determinant.csproj.CoreCompileInputs.cache
+C:\Users\musev\alu-csharp\csharp-linear_algebra\28-determinant\obj\Debug\net8.0\28-determinant.sourcelink.json
+C:\Users\musev\alu-csharp\csharp-linear_algebra\28-determinant\obj\Debug\net8.0\28-determinant.dll
+C:\Users\musev\alu-csharp\csharp-linear_algebra\28-determinant\obj\Debug\net8.0\refint\28-determinant.dll
+C:\Users\musev\alu-csharp\csharp-linear_algebra\28-determinant\obj\Debug\net8.0\28-determinant.pdb
+C:\Users\musev\alu-csharp\csharp-linear_algebra\28-determinant\obj\Debug\net8.0\28-determinant.genruntimeconfig.cache
+C:\Users\musev\alu-csharp\csharp-linear_algebra\28-determinant\obj\Debug\net8.0\ref\28-determinant.dll

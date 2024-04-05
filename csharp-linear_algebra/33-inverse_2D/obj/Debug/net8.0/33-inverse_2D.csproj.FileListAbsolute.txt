@@ -1,0 +1,15 @@
+C:\Users\musev\alu-csharp\csharp-linear_algebra\33-inverse_2D\bin\Debug\net8.0\33-inverse_2D.exe
+C:\Users\musev\alu-csharp\csharp-linear_algebra\33-inverse_2D\bin\Debug\net8.0\33-inverse_2D.deps.json
+C:\Users\musev\alu-csharp\csharp-linear_algebra\33-inverse_2D\bin\Debug\net8.0\33-inverse_2D.runtimeconfig.json
+C:\Users\musev\alu-csharp\csharp-linear_algebra\33-inverse_2D\bin\Debug\net8.0\33-inverse_2D.dll
+C:\Users\musev\alu-csharp\csharp-linear_algebra\33-inverse_2D\bin\Debug\net8.0\33-inverse_2D.pdb
+C:\Users\musev\alu-csharp\csharp-linear_algebra\33-inverse_2D\obj\Debug\net8.0\33-inverse_2D.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\musev\alu-csharp\csharp-linear_algebra\33-inverse_2D\obj\Debug\net8.0\33-inverse_2D.AssemblyInfoInputs.cache
+C:\Users\musev\alu-csharp\csharp-linear_algebra\33-inverse_2D\obj\Debug\net8.0\33-inverse_2D.AssemblyInfo.cs
+C:\Users\musev\alu-csharp\csharp-linear_algebra\33-inverse_2D\obj\Debug\net8.0\33-inverse_2D.csproj.CoreCompileInputs.cache
+C:\Users\musev\alu-csharp\csharp-linear_algebra\33-inverse_2D\obj\Debug\net8.0\33-inverse_2D.sourcelink.json
+C:\Users\musev\alu-csharp\csharp-linear_algebra\33-inverse_2D\obj\Debug\net8.0\33-inverse_2D.dll
+C:\Users\musev\alu-csharp\csharp-linear_algebra\33-inverse_2D\obj\Debug\net8.0\refint\33-inverse_2D.dll
+C:\Users\musev\alu-csharp\csharp-linear_algebra\33-inverse_2D\obj\Debug\net8.0\33-inverse_2D.pdb
+C:\Users\musev\alu-csharp\csharp-linear_algebra\33-inverse_2D\obj\Debug\net8.0\33-inverse_2D.genruntimeconfig.cache
+C:\Users\musev\alu-csharp\csharp-linear_algebra\33-inverse_2D\obj\Debug\net8.0\ref\33-inverse_2D.dll
