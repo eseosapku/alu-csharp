@@ -1,15 +1,29 @@
-namespace MyMath.Tests;
+using NUnit.Framework;
+using MyMath;
 
-public class Tests
+namespace MyMath.Tests
 {
-    [SetUp]
-    public void Setup()
+    /// <summary>
+    /// Contains unit tests for the <see cref="Operations"/> class.
+    /// </summary>
+    [TestFixture]
+    public class OperationsTests
     {
-    }
+        /// <summary>
+        /// Verifies that the Add method returns the correct sum of two integers.
+        /// </summary>
+        [Test]
+        public void Add_WhenCalled_ReturnsSumOfTwoNumbers()
+        {
+            // Arrange
+            int a = 5;
+            int b = 7;
 
-    [Test]
-    public void Test1()
-    {
-        Assert.Pass();
+            // Act
+            int result = Operations.Add(a, b);
+
+            // Assert
+            Assert.AreEqual(12, result);
+        }
     }
 }
