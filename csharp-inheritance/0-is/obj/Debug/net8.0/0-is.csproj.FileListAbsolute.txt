@@ -1,0 +1,15 @@
+C:\Users\musev\alu-csharp\csharp-inheritance\0-is\bin\Debug\net8.0\0-is.exe
+C:\Users\musev\alu-csharp\csharp-inheritance\0-is\bin\Debug\net8.0\0-is.deps.json
+C:\Users\musev\alu-csharp\csharp-inheritance\0-is\bin\Debug\net8.0\0-is.runtimeconfig.json
+C:\Users\musev\alu-csharp\csharp-inheritance\0-is\bin\Debug\net8.0\0-is.dll
+C:\Users\musev\alu-csharp\csharp-inheritance\0-is\bin\Debug\net8.0\0-is.pdb
+C:\Users\musev\alu-csharp\csharp-inheritance\0-is\obj\Debug\net8.0\0-is.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\musev\alu-csharp\csharp-inheritance\0-is\obj\Debug\net8.0\0-is.AssemblyInfoInputs.cache
+C:\Users\musev\alu-csharp\csharp-inheritance\0-is\obj\Debug\net8.0\0-is.AssemblyInfo.cs
+C:\Users\musev\alu-csharp\csharp-inheritance\0-is\obj\Debug\net8.0\0-is.csproj.CoreCompileInputs.cache
+C:\Users\musev\alu-csharp\csharp-inheritance\0-is\obj\Debug\net8.0\0-is.sourcelink.json
+C:\Users\musev\alu-csharp\csharp-inheritance\0-is\obj\Debug\net8.0\0-is.dll
+C:\Users\musev\alu-csharp\csharp-inheritance\0-is\obj\Debug\net8.0\refint\0-is.dll
+C:\Users\musev\alu-csharp\csharp-inheritance\0-is\obj\Debug\net8.0\0-is.pdb
+C:\Users\musev\alu-csharp\csharp-inheritance\0-is\obj\Debug\net8.0\0-is.genruntimeconfig.cache
+C:\Users\musev\alu-csharp\csharp-inheritance\0-is\obj\Debug\net8.0\ref\0-is.dll
