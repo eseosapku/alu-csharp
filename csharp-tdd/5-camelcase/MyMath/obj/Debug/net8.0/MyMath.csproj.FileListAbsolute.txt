@@ -1,0 +1,15 @@
+C:\Users\musev\alu-csharp\csharp-tdd\5-camelcase\MyMath\bin\Debug\net8.0\MyMath.exe
+C:\Users\musev\alu-csharp\csharp-tdd\5-camelcase\MyMath\bin\Debug\net8.0\MyMath.deps.json
+C:\Users\musev\alu-csharp\csharp-tdd\5-camelcase\MyMath\bin\Debug\net8.0\MyMath.runtimeconfig.json
+C:\Users\musev\alu-csharp\csharp-tdd\5-camelcase\MyMath\bin\Debug\net8.0\MyMath.dll
+C:\Users\musev\alu-csharp\csharp-tdd\5-camelcase\MyMath\bin\Debug\net8.0\MyMath.pdb
+C:\Users\musev\alu-csharp\csharp-tdd\5-camelcase\MyMath\obj\Debug\net8.0\MyMath.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\musev\alu-csharp\csharp-tdd\5-camelcase\MyMath\obj\Debug\net8.0\MyMath.AssemblyInfoInputs.cache
+C:\Users\musev\alu-csharp\csharp-tdd\5-camelcase\MyMath\obj\Debug\net8.0\MyMath.AssemblyInfo.cs
+C:\Users\musev\alu-csharp\csharp-tdd\5-camelcase\MyMath\obj\Debug\net8.0\MyMath.csproj.CoreCompileInputs.cache
+C:\Users\musev\alu-csharp\csharp-tdd\5-camelcase\MyMath\obj\Debug\net8.0\MyMath.sourcelink.json
+C:\Users\musev\alu-csharp\csharp-tdd\5-camelcase\MyMath\obj\Debug\net8.0\MyMath.dll
+C:\Users\musev\alu-csharp\csharp-tdd\5-camelcase\MyMath\obj\Debug\net8.0\refint\MyMath.dll
+C:\Users\musev\alu-csharp\csharp-tdd\5-camelcase\MyMath\obj\Debug\net8.0\MyMath.pdb
+C:\Users\musev\alu-csharp\csharp-tdd\5-camelcase\MyMath\obj\Debug\net8.0\MyMath.genruntimeconfig.cache
+C:\Users\musev\alu-csharp\csharp-tdd\5-camelcase\MyMath\obj\Debug\net8.0\ref\MyMath.dll
