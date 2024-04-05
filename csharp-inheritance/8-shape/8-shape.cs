@@ -1,63 +1,40 @@
 ﻿using System;
 
-public class Rectangle : Shape
+// Ensure this class is defined in your project
+public class Shape
 {
-    private int width;
-    private int height;
-
-    public int Width
-    {
-        get => width;
-        set
-        {
-            if (value < 0)
-            {
-                throw new ArgumentException("Width must be greater than or equal to 0");
-            }
-            width = value;
-        }
-    }
-
-    public int Height
-    {
-        get => height;
-        set
-        {
-            if (value < 0)
-            {
-                throw new ArgumentException("Height must be greater than or equal to 0");
-            }
-            height = value;
-        }
-    }
-
-    public override int Area()
+    // This method might throw an exception to indicate that it needs to be overridden in a derived class
+    public virtual double Area()
     {
         throw new NotImplementedException("Area() is not implemented");
     }
-
-    public override string ToString()
-    {
-        return $"[Rectangle] {Width} / {Height}";
-    }
 }
 
-public class Square : Rectangle
+public class Square : Shape
 {
     private int size;
 
     public int Size
     {
-        get => size;
+        get { return size; }
         set
         {
             if (value < 0)
             {
-                throw new ArgumentException("Size must be greater than or equal to 0");
+                throw new ArgumentException("Size must be greater than or equal to 0.", nameof(value));
             }
             size = value;
-            Width = value;
-            Height = value;
         }
+    }
+
+    // Override the Area method to provide the specific implementation for a Square
+    public override double Area()
+    {
+        return Size * Size;
+    }
+
+    public override string ToString()
+    {
+        return $"[Square] {Size} / {Size}";
     }
 }
