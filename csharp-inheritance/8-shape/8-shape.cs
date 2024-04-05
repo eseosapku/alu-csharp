@@ -21,9 +21,9 @@ public class Square : Shape
         {
             if (value < 0)
             {
-                Console.WriteLine("Size must be greater than or equal to 0.");
+                 throw new ArgumentException("Height must be greater than or equal to 0");
             }
-            size = value;
+	    size = value;
         }
     }
 
