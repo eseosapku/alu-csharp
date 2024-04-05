@@ -1,6 +1,18 @@
-﻿using System.Reflection;
+﻿using System;
+using System.Collections.Generic;
+using System.Reflection;
+
 using System;
 using System.Collections.Generic;
+using System.Reflection;
+
+public class Shape
+{
+    public virtual int Area()
+    {
+        throw new NotImplementedException("Area() is not implemented");
+    }
+}
 
 public class Rectangle : Shape
 {
