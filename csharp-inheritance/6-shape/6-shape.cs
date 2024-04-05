@@ -1,5 +1,13 @@
 ﻿using System;
 
+public class Shape
+{
+    public virtual double Area()
+    {
+        throw new NotImplementedException("Area() is not implemented");
+    }
+}
+
 public class Rectangle : Shape
 {
     private int width;
@@ -11,9 +19,7 @@ public class Rectangle : Shape
         set
         {
             if (value < 0)
-            {
                 throw new ArgumentException("Width must be greater than or equal to 0");
-            }
             width = value;
         }
     }
@@ -24,15 +30,13 @@ public class Rectangle : Shape
         set
         {
             if (value < 0)
-            {
                 throw new ArgumentException("Height must be greater than or equal to 0");
-            }
             height = value;
         }
     }
 
-    public override int Area()
+    public override double Area()
     {
-        throw new NotImplementedException("Area() is not implemented");
+        return width * height;
     }
 }
