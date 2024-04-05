@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "/Tl9d7ZRFyToccL9fOCjdp1ji2eTmiLdQRKPlSb4EzU4MvRnpPcP9woRlgQg69AlonUXWe7NL7awncdnXr+0Pg==",
+  "dgSpecHash": "4Ib4M8YWOwRwkR7WtHeKjTojEbTQULCzXJUTC9tFu+laHAKtm8yKVWIDFD5MB3h6csc1hFbZDl/I1E4nio8YVw==",
   "success": true,
   "projectFilePath": "C:\\Users\\musev\\alu-csharp\\csharp-inheritance\\7-shape\\7-shape.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\musev\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.17\\microsoft.netcore.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\musev\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.17\\microsoft.windowsdesktop.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\musev\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.17\\microsoft.aspnetcore.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\musev\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.17\\microsoft.netcore.app.host.win-x64.7.0.17.nupkg.sha512"
+  ],
   "logs": []
 }
