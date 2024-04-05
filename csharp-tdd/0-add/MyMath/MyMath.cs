@@ -6,12 +6,12 @@ namespace MyMath.Tests
     [TestFixture]
     public class OperationsTests
     {
-	/// <summary>
-        /// Returns addition of two integers
+        /// <summary>
+        /// Tests the addition of two integers.
         /// </summary>
-        /// <param name="a"></param>
-        /// <param name="b"></param>
-        /// <returns></returns>
+        /// <param name="a">The first integer.</param>
+        /// <param name="b">The second integer.</param>
+        /// <returns>The sum of the two integers.</returns>
         [Test]
         public void Add_WhenCalled_ReturnsSumOfTwoNumbers()
         {
