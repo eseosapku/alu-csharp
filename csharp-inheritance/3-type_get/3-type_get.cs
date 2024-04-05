@@ -29,7 +29,7 @@ public class MyDog
     public int Age { get; set; }
     public int Happiness { get; set; }
 
-    public MyDog(string? name, int age, int happiness)
+    public MyDog(string name, int age, int happiness)
     {
         // Assign values to properties within the constructor
         Name = name;
