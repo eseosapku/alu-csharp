@@ -23,7 +23,7 @@ namespace MyMath.Tests
             int result = Operations.Add(a, b);
 
             // Assert
-            Assert.AreEqual(12, result);
+            Assert.That(result, Is.EqualTo(12)); // Using the constraint model
         }
     }
 }
