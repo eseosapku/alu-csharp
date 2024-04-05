@@ -1,0 +1,15 @@
+C:\Users\musev\alu-csharp\csharp-inheritance\9-shape\bin\Debug\net8.0\9-shape.exe
+C:\Users\musev\alu-csharp\csharp-inheritance\9-shape\bin\Debug\net8.0\9-shape.deps.json
+C:\Users\musev\alu-csharp\csharp-inheritance\9-shape\bin\Debug\net8.0\9-shape.runtimeconfig.json
+C:\Users\musev\alu-csharp\csharp-inheritance\9-shape\bin\Debug\net8.0\9-shape.dll
+C:\Users\musev\alu-csharp\csharp-inheritance\9-shape\bin\Debug\net8.0\9-shape.pdb
+C:\Users\musev\alu-csharp\csharp-inheritance\9-shape\obj\Debug\net8.0\9-shape.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\musev\alu-csharp\csharp-inheritance\9-shape\obj\Debug\net8.0\9-shape.AssemblyInfoInputs.cache
+C:\Users\musev\alu-csharp\csharp-inheritance\9-shape\obj\Debug\net8.0\9-shape.AssemblyInfo.cs
+C:\Users\musev\alu-csharp\csharp-inheritance\9-shape\obj\Debug\net8.0\9-shape.csproj.CoreCompileInputs.cache
+C:\Users\musev\alu-csharp\csharp-inheritance\9-shape\obj\Debug\net8.0\9-shape.sourcelink.json
+C:\Users\musev\alu-csharp\csharp-inheritance\9-shape\obj\Debug\net8.0\9-shape.dll
+C:\Users\musev\alu-csharp\csharp-inheritance\9-shape\obj\Debug\net8.0\refint\9-shape.dll
+C:\Users\musev\alu-csharp\csharp-inheritance\9-shape\obj\Debug\net8.0\9-shape.pdb
+C:\Users\musev\alu-csharp\csharp-inheritance\9-shape\obj\Debug\net8.0\9-shape.genruntimeconfig.cache
+C:\Users\musev\alu-csharp\csharp-inheritance\9-shape\obj\Debug\net8.0\ref\9-shape.dll
