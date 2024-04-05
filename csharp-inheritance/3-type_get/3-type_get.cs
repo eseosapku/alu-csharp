@@ -1,23 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Reflection;
-
-public class Obj
+﻿public class Dog
 {
-    public static void Print(object myObj)
+    public string Name { get; set; }
+    public int Age { get; set; }
+    public int Happiness { get; set; }
+
+    // Constructor
+    public Dog()
     {
-        Type type = myObj.GetType();
-
-        Console.WriteLine($"{type.Name} Properties:");
-        foreach (PropertyInfo property in type.GetProperties())
-        {
-            Console.WriteLine(property.Name);
-        }
-
-        Console.WriteLine($"{type.Name} Methods:");
-        foreach (MethodInfo method in type.GetMethods())
-        {
-            Console.WriteLine(method.Name);
-        }
+        Name = string.Empty; // or null if it's appropriate for Name to be nullable
+        Age = 0;
+        Happiness = 0;
     }
+
+    // Methods...
 }
