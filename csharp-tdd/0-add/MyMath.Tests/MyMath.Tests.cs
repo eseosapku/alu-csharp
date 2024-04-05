@@ -1,29 +1,53 @@
 using NUnit.Framework;
 using MyMath;
 
-namespace MyMath.Tests
-{
-    /// <summary>
-    /// Contains unit tests for the <see cref="Operations"/> class.
-    /// </summary>
+
+
+namespace Tests{
+
+
     [TestFixture]
-    public class OperationsTests
+    public class Test_NumberAddition
     {
+        private Operations _myMath;
+
+        [SetUp]
+        public void Setup()
+        {
+            _myMath = new Operations();
+        }
+
         /// <summary>
-        /// Verifies that the Add method returns the correct sum of two integers.
+        /// Test if addition of two numbers is 4
         /// </summary>
         [Test]
-        public void Add_WhenCalled_ReturnsSumOfTwoNumbers()
+        public void AdditionOperation()
         {
-            // Arrange
-            int a = 5;
-            int b = 7;
-
-            // Act
-            int result = Operations.Add(a, b);
-
-            // Assert
-            Assert.That(result, Is.EqualTo(12)); // Using the constraint model
+            bool state = false;
+          if((Operations.Add(2, 2)) == 4){
+            state = true;
+          }
+            Assert.IsTrue(state, "State is True");
+            
         }
+
+        /// <summary>
+        /// Test case with argument passsing. 
+        /// </summary>
+        /// <param name="value"></param>
+        //[TestCase(7)]
+        ///[TestCase(7)]
+        //[TestCase(7)]
+        
+        /*
+        public void TestMultiInput(int value){
+            bool state = false;
+            if((Operations.Add(2, 5)) == value){
+                state = true;
+            }
+            Assert.IsTrue(state, "state is True");
+        }
+        */
+
     }
 }
