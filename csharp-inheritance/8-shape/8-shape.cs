@@ -21,7 +21,7 @@ public class Square : Shape
         {
             if (value < 0)
             {
-                 throw new ArgumentException("Height must be greater than or equal to 0");
+                 throw new ArgumentException("Size must be greater than or equal to 0");
             }
 	    size = value;
         }
