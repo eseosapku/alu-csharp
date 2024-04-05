@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("11-multiply_by_2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fecdb0d829880ec4423d9c74522a606c01416773")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c2367a2dcbe3c83620fc703387e0f617fd938a44")]
 [assembly: System.Reflection.AssemblyProductAttribute("11-multiply_by_2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("11-multiply_by_2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
