@@ -1,23 +1,69 @@
 ﻿using System;
-using System.Reflection;
-using System.Linq;
+using System.Collections.Generic;
 
-public class Obj
+public class Rectangle : Shape
 {
-    public static void Print(object myObj)
+    private int width;
+    private int height;
+
+    public int Width
     {
-        Type objType = myObj.GetType();
-
-        Console.WriteLine($"{objType.Name} Properties:");
-        foreach (var property in objType.GetProperties())
+        get => width;
+        set
         {
-            Console.WriteLine(property.Name);
+            if (value < 0)
+            {
+                throw new ArgumentException("Width must be greater than or equal to 0");
+            }
+            width = value;
         }
+    }
 
-        Console.WriteLine($"{objType.Name} Methods:");
-        foreach (var method in objType.GetMethods().Where(m => !m.IsSpecialName))
+    public int Height
+    {
+        get => height;
+        set
         {
-            Console.WriteLine(method.Name);
+            if (value < 0)
+            {
+                throw new ArgumentException("Height must be greater than or equal to 0");
+            }
+            height = value;
         }
+    }
+
+    public override int Area()
+    {
+        return Width * Height;
+    }
+
+    public override string ToString()
+    {
+        return $"[Rectangle] {Width} / {Height}";
+    }
+}
+
+public class Square : Rectangle
+{
+    private int size;
+
+    public int Size
+    {
+        get => size;
+        set
+        {
+            if (value < 0)
+            {
+                throw new ArgumentException("Size must be greater than or equal to 0");
+            }
+            size = value;
+            Width = value;
+            Height = value;
+        }
+    }
+
+    public override string ToString()
+    {
+        return $"[Square] {Size} / {Size}";
     }
 }
