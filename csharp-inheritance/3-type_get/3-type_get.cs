@@ -22,14 +22,14 @@ public class Obj
     }
 }
 
-public class Dog
+public class MyDog
 {
     // Declare properties as nullable if they can be assigned later
-    public string? Name { get; set; }
+    public string Name { get; set; }
     public int Age { get; set; }
     public int Happiness { get; set; }
 
-    public Dog(string? name, int age, int happiness)
+    public MyDog(string? name, int age, int happiness)
     {
         // Assign values to properties within the constructor
         Name = name;
