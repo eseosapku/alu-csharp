@@ -1,34 +1,23 @@
-﻿using System.Reflection;
+﻿using System;
+using System.Reflection;
+using System.Linq;
 
-/// <summary>
-/// Provides utility methods for inspecting object properties and methods.
-/// </summary>
-class Obj
+public class Obj
 {
-    /// <summary>
-    /// Prints the properties and methods of the specified object.
-    /// </summary>
-    /// <param name="myObj">The object to inspect.</param>
     public static void Print(object myObj)
     {
-        TypeInfo t = myObj.GetType().GetTypeInfo();
-        IEnumerable<PropertyInfo> pList = t.GetProperties();
-        Console.WriteLine($"{t.Name} Properties:");
+        Type objType = myObj.GetType();
 
-        foreach (PropertyInfo n in pList)
+        Console.WriteLine($"{objType.Name} Properties:");
+        foreach (var property in objType.GetProperties())
         {
-            Console.WriteLine(n.Name);
+            Console.WriteLine(property.Name);
         }
 
-        IEnumerable<MethodInfo> nMethod = t.GetMethods();
-        Console.WriteLine($"{t.Name} Methods:");
-
-        foreach (MethodInfo m in nMethod)
+        Console.WriteLine($"{objType.Name} Methods:");
+        foreach (var method in objType.GetMethods().Where(m => !m.IsSpecialName))
         {
-            if (m.DeclaringType == myObj.GetType())
-            {
-                Console.WriteLine(m.Name);
-            }
+            Console.WriteLine(method.Name);
         }
     }
 }
