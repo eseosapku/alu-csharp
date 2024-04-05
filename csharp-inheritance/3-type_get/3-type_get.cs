@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Reflection;
 
-public class Obj
+class Obj
 {
     public static void Print(object myObj)
     {
@@ -19,27 +19,5 @@ public class Obj
         {
             Console.WriteLine(method.Name);
         }
-    }
-}
-
-public class MyDog
-{
-    // Declare properties as nullable if they can be assigned later
-    public string Name { get; set; }
-    public int Age { get; set; }
-    public int Happiness { get; set; }
-
-    public MyDog(string name, int age, int happiness)
-    {
-        // Assign values to properties within the constructor
-        Name = name;
-        Age = age;
-        Happiness = happiness;
-    }
-
-    // Define other methods as needed
-    public void Bark()
-    {
-        Console.WriteLine("Woof!");
     }
 }
