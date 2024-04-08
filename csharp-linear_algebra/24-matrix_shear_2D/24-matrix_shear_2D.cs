@@ -40,8 +40,8 @@ public class MatrixMath
             // Shear along the y-axis
             for (int j = 0; j < matrix.GetLength(1); j++)
             {
-                shearedMatrix[0, j] = matrix[0, j];
-                shearedMatrix[1, j] = matrix[1, j] + (factor * matrix[0, j]);
+                shearedMatrix[0, j] = matrix[0, j] + (factor * matrix[1, j]);
+                shearedMatrix[1, j] = matrix[1, j];
             }
         }
 
