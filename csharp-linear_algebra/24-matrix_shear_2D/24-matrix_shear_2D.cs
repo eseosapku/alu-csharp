@@ -1,50 +1,84 @@
 ﻿using System;
 
-public class MatrixMath
+public class MatrixTransformation
 {
-    /// <summary>
-    /// Shears a square 2D matrix by a given shear factor and returns the resulting matrix.
-    /// </summary>
-    /// <param name="matrix">The square 2D matrix to shear.</param>
-    /// <param name="direction">The direction of the shear (x or y).</param>
-    /// <param name="factor">The shear factor.</param>
-    /// <returns>The resulting sheared matrix or a matrix containing -1 if the input is invalid.</returns>
-    public static double[,] Shear2D(double[,] matrix, char direction, double factor)
+    // Applies a shear along the X-axis to a 2D matrix of points.
+    public static double[,] ShearX(double[,] matrix, double shx)
     {
-        // Check if the matrix is square
-        if (matrix.GetLength(0) != matrix.GetLength(1))
-        {
-            return new double[,] { { -1 } }; // Return -1 for invalid matrix size
-        }
+        int rows = matrix.GetLength(0);
+        int cols = matrix.GetLength(1);
+        double[,] result = new double[rows, cols];
 
-        // Check if the direction is valid
-        if (direction != 'x' && direction != 'y')
+        for (int i = 0; i < rows; i++)
         {
-            return new double[,] { { -1 } }; // Return -1 for invalid direction
-        }
-
-        // Shear the matrix based on the direction
-        double[,] shearedMatrix = new double[matrix.GetLength(0), matrix.GetLength(1)];
-
-        if (direction == 'x')
-        {
-            // Shear along the x-axis
-            for (int i = 0; i < matrix.GetLength(0); i++)
+            for (int j = 0; j < cols; j++)
             {
-                shearedMatrix[i, 0] = matrix[i, 0] + (factor * matrix[i, 1]);
-                shearedMatrix[i, 1] = matrix[i, 1];
-            }
-        }
-        else if (direction == 'y')
-        {
-            // Shear along the y-axis
-            for (int j = 0; j < matrix.GetLength(1); j++)
-            {
-                shearedMatrix[0, j] = matrix[0, j] + (factor * matrix[1, j]);
-                shearedMatrix[1, j] = matrix[1, j];
+                double x = matrix[i, j];
+                double y = i; // Assuming each row corresponds to a Y coordinate
+                // Applying shear transformation
+                result[i, j] = x + shx * y;
             }
         }
 
-        return shearedMatrix;
+        return result;
+    }
+
+    // Applies a shear along the Y-axis to a 2D matrix of points.
+    public static double[,] ShearY(double[,] matrix, double shy)
+    {
+        int rows = matrix.GetLength(0);
+        int cols = matrix.GetLength(1);
+        double[,] result = new double[rows, cols];
+
+        for (int i = 0; i < rows; i++)
+        {
+            for (int j = 0; j < cols; j++)
+            {
+                double x = j; // Assuming each column corresponds to an X coordinate
+                double y = matrix[i, j];
+                // Applying shear transformation
+                result[i, j] = shy * x + y;
+            }
+        }
+
+        return result;
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        double[,] matrix = {
+            { 1, 2 },
+            { 3, 4 }
+        };
+
+        double shearFactorX = 2; // Shear along X-axis
+        double shearFactorY = 2; // Shear along Y-axis
+
+        double[,] shearedMatrixX = MatrixTransformation.ShearX(matrix, shearFactorX);
+        double[,] shearedMatrixY = MatrixTransformation.ShearY(matrix, shearFactorY);
+
+        // Output the sheared matrix
+        Console.WriteLine("Sheared Matrix along X:");
+        for (int i = 0; i < shearedMatrixX.GetLength(0); i++)
+        {
+            for (int j = 0; j < shearedMatrixX.GetLength(1); j++)
+            {
+                Console.Write($"{shearedMatrixX[i, j]} ");
+            }
+            Console.WriteLine();
+        }
+
+        Console.WriteLine("Sheared Matrix along Y:");
+        for (int i = 0; i < shearedMatrixY.GetLength(0); i++)
+        {
+            for (int j = 0; j < shearedMatrixY.GetLength(1); j++)
+            {
+                Console.Write($"{shearedMatrixY[i, j]} ");
+            }
+            Console.WriteLine();
+        }
     }
 }
