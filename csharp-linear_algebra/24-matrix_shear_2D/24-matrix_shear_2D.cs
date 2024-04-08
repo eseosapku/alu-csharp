@@ -1,6 +1,6 @@
 ﻿using System;
 
-public class MatrixTransformation
+public class MatrixMath
 {
     // Applies a shear along the X-axis to a 2D matrix of points.
     public static double[,] ShearX(double[,] matrix, double shx)
