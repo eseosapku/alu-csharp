@@ -3,40 +3,33 @@
 public class MatrixMath
 {
     /// <summary>
-    /// Calculates the determinant of a matrix.
+    /// Transposes a matrix and returns the resulting matrix.
     /// </summary>
-    /// <param name="matrix">The matrix to calculate the determinant for.</param>
-    /// <returns>The determinant of the matrix.</returns>
-    public static double Determinant(double[,] matrix)
+    /// <param name="matrix">The matrix to transpose.</param>
+    /// <returns>The transposed matrix.</returns>
+    public static double[,] Transpose(double[,] matrix)
     {
-        // Check if the matrix is 2D or 3D
-        if (matrix.GetLength(0) != matrix.GetLength(1) || (matrix.GetLength(0) != 2 && matrix.GetLength(0) != 3))
+        // Check if the matrix is empty
+        if (matrix.Length == 0)
         {
-            return -1; // Return -1 for invalid matrix dimension
+            return new double[0, 0]; // Return an empty matrix
         }
 
-        // Calculate determinant based on matrix dimension
-        if (matrix.GetLength(0) == 2)
-        {
-            // For 2x2 matrix, ad-bc
-            return (matrix[0, 0] * matrix[1, 1]) - (matrix[0, 1] * matrix[1, 0]);
-        }
-        else if (matrix.GetLength(0) == 3)
-        {
-            // For 3x3 matrix, a(ei − fh) − b(di − fg) + c(dh − eg)
-            double a = matrix[0, 0];
-            double b = matrix[0, 1];
-            double c = matrix[0, 2];
-            double d = matrix[1, 0];
-            double e = matrix[1, 1];
-            double f = matrix[1, 2];
-            double g = matrix[2, 0];
-            double h = matrix[2, 1];
-            double i = matrix[2, 2];
+        int rows = matrix.GetLength(0);
+        int cols = matrix.GetLength(1);
 
-            return (a * ((e * i) - (f * h))) - (b * ((d * i) - (f * g))) + (c * ((d * h) - (e * g)));
+        // Create a new matrix to store the transposed values
+        double[,] transposedMatrix = new double[cols, rows];
+
+        // Perform the transpose operation
+        for (int i = 0; i < rows; i++)
+        {
+            for (int j = 0; j < cols; j++)
+            {
+                transposedMatrix[j, i] = Math.Round(matrix[i, j], 2); // Round to two decimal places
+            }
         }
 
-        return -1; // Default case, should not reach here
+        return transposedMatrix;
     }
 }
