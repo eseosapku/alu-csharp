@@ -1,27 +1,37 @@
 ﻿using System;
 
-public class VectorMath
+public class MatrixMath
 {
     /// <summary>
-    /// Calculates the cross product of two 3D vectors.
+    /// Calculates the inverse of a 2D matrix.
     /// </summary>
-    /// <param name="vector1">The first 3D vector.</param>
-    /// <param name="vector2">The second 3D vector.</param>
-    /// <returns>The cross product of the two vectors.</returns>
-    public static double[] CrossProduct(double[] vector1, double[] vector2)
+    /// <param name="matrix">The 2D matrix to calculate the inverse for.</param>
+    /// <returns>The inverse of the matrix if it exists, otherwise [-1].</returns>
+    public static double[,] Inverse2D(double[,] matrix)
     {
-        // Check if the vectors are 3D
-        if (vector1.Length != 3 || vector2.Length != 3)
+        // Check if the matrix is 2D
+        if (matrix.GetLength(0) != 2 || matrix.GetLength(1) != 2)
         {
-            return new double[] { -1 }; // Return a vector containing -1 for invalid vectors
+            // Return [-1] for non-2D matrices
+            return new double[,] { { -1 } };
         }
 
-        // Calculate the cross product
-        double[] result = new double[3];
-        result[0] = (vector1[1] * vector2[2]) - (vector1[2] * vector2[1]);
-        result[1] = (vector1[2] * vector2[0]) - (vector1[0] * vector2[2]);
-        result[2] = (vector1[0] * vector2[1]) - (vector1[1] * vector2[0]);
+        // Calculate determinant
+        double determinant = (matrix[0, 0] * matrix[1, 1]) - (matrix[0, 1] * matrix[1, 0]);
 
-        return result;
+        // Check if the matrix is non-invertible (determinant is zero)
+        if (Math.Abs(determinant) < 0.0001)
+        {
+            return new double[,] { { -1 } }; // Return [-1] for non-invertible matrices
+        }
+
+        // Calculate the inverse
+        double[,] inverse = new double[2, 2];
+        inverse[0, 0] = matrix[1, 1] / determinant;
+        inverse[0, 1] = -matrix[0, 1] / determinant;
+        inverse[1, 0] = -matrix[1, 0] / determinant;
+        inverse[1, 1] = matrix[0, 0] / determinant;
+
+        return inverse;
     }
 }
