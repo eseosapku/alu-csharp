@@ -31,7 +31,7 @@ public class MatrixMath
             // Shear along the x-axis
             for (int i = 0; i < matrix.GetLength(0); i++)
             {
-                shearedMatrix[i, 0] = Math.Round(matrix[i, 0] + (factor * matrix[i, 1]), 2);
+                shearedMatrix[i, 0] = matrix[i, 0] + (factor * matrix[i, 1]);
                 shearedMatrix[i, 1] = matrix[i, 1];
             }
         }
@@ -41,7 +41,7 @@ public class MatrixMath
             for (int j = 0; j < matrix.GetLength(1); j++)
             {
                 shearedMatrix[0, j] = matrix[0, j];
-                shearedMatrix[1, j] = Math.Round(matrix[1, j] + (factor * matrix[0, j]), 2);
+                shearedMatrix[1, j] = matrix[1, j] + (factor * matrix[0, j]);
             }
         }
 
