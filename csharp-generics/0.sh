@@ -1,22 +1,26 @@
 #!/usr/bin/env bash
 
+# Create and enter the task directory
 mkdir -p 0-queue
 cd 0-queue
 
+# Create the .csproj configured to eliminate the warning and route the XML file perfectly
 cat << 'EOF' > 0-queue.csproj
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>disable</ImplicitUsings>
     <Nullable>disable</Nullable>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <DocumentationFile>bin\Debug\netcoreapp2.1\0-queue.xml</DocumentationFile>
   </PropertyGroup>
 
 </Project>
 EOF
 
+# Create queue.cs with clean XML documentation
 cat << 'EOF' > queue.cs
 using System;
 
@@ -37,4 +41,4 @@ public class Queue<T>
 }
 EOF
 
-echo "Project configuration generated for netcoreapp2.1."
+echo "Project files generated successfully."
