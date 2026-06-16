@@ -1,24 +1,3 @@
-#!/usr/bin/env bash
-
-mkdir -p 4-print
-cd 4-print
-
-cat << 'EOF' > 4-print.csproj
-<Project Sdk="Microsoft.NET.Sdk">
-
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net7.0</TargetFramework>
-    <ImplicitUsings>disable</ImplicitUsings>
-    <Nullable>disable</Nullable>
-    <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <DocumentationFile>bin\Debug\netcoreapp2.1\4-print.xml</DocumentationFile>
-  </PropertyGroup>
-
-</Project>
-EOF
-
-cat << 'EOF' > queue.cs
 using System;
 
 /// <summary>
@@ -156,6 +135,3 @@ public class Queue<T>
         return count;
     }
 }
-EOF
-
-echo "Task 4 directory '4-print' and its files created successfully."
