@@ -1,10 +1,8 @@
 #!/usr/bin/env bash
 
-# Create and enter the task directory
 mkdir -p 0-queue
 cd 0-queue
 
-# Create the .csproj configured to eliminate the warning and route the XML file perfectly
 cat << 'EOF' > 0-queue.csproj
 <Project Sdk="Microsoft.NET.Sdk">
 
@@ -20,7 +18,6 @@ cat << 'EOF' > 0-queue.csproj
 </Project>
 EOF
 
-# Create queue.cs with clean XML documentation
 cat << 'EOF' > queue.cs
 using System;
 
