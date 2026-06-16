@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
 
+# Create and enter the task directory
 mkdir -p 5-concatenate
 cd 5-concatenate
 
+# Create the .csproj configured to match SDK 7.0 and route the XML documentation correctly
 cat << 'EOF' > 5-concatenate.csproj
 <Project Sdk="Microsoft.NET.Sdk">
 
@@ -18,6 +20,7 @@ cat << 'EOF' > 5-concatenate.csproj
 </Project>
 EOF
 
+# Create queue.cs with required properties, nested Node class, and corrected Concatenate string
 cat << 'EOF' > queue.cs
 using System;
 
@@ -155,7 +158,7 @@ public class Queue<T>
     {
         if (typeof(T) != typeof(string) && typeof(T) != typeof(char))
         {
-            Console.WriteLine("Concatenate() is for a queue of Strings or Chars only.");
+            Console.WriteLine("Concatenate is for a queue of Strings or Chars only.");
             return null;
         }
 
@@ -199,4 +202,4 @@ public class Queue<T>
 }
 EOF
 
-echo "Task 5 directory '5-concatenate' and its files created successfully."
+echo "Task 5 directory configuration updated successfully."
