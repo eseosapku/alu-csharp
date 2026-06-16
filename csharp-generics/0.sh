@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-mkdir queue.cs
-cd queue.cs
+mkdir 0-queue.cs
+cd 0-queue.cs
 
 dotnet new console
 
