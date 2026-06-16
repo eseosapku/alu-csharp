@@ -1,24 +1,3 @@
-#!/usr/bin/env bash
-
-mkdir -p 1-enqueue
-cd 1-enqueue
-
-cat << 'EOF' > 1-enqueue.csproj
-<Project Sdk="Microsoft.NET.Sdk">
-
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net7.0</TargetFramework>
-    <ImplicitUsings>disable</ImplicitUsings>
-    <Nullable>disable</Nullable>
-    <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <DocumentationFile>bin\Debug\netcoreapp2.1\1-enqueue.xml</DocumentationFile>
-  </PropertyGroup>
-
-</Project>
-EOF
-
-cat << 'EOF' > queue.cs
 using System;
 
 /// <summary>
@@ -90,6 +69,30 @@ public class Queue<T>
     }
 
     /// <summary>
+    /// Removes the first node in the queue and returns its value.
+    /// </summary>
+    /// <returns>The value of the removed node, or default(T) if empty.</returns>
+    public T Dequeue()
+    {
+        if (head == null)
+        {
+            Console.WriteLine("Queue is empty");
+            return default(T);
+        }
+
+        T removedValue = head.value;
+        head = head.next;
+
+        if (head == null)
+        {
+            tail = null;
+        }
+
+        count--;
+        return removedValue;
+    }
+
+    /// <summary>
     /// Returns the total count of elements currently in the Queue.
     /// </summary>
     /// <returns>The total number of nodes as an integer.</returns>
@@ -98,6 +101,3 @@ public class Queue<T>
         return count;
     }
 }
-EOF
-
-echo "Task 1 directory '1-enqueue' and its files created successfully."

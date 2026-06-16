@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-mkdir -p 1-enqueue
-cd 1-enqueue
+mkdir -p 2-dequeue
+cd 2-dequeue
 
-cat << 'EOF' > 1-enqueue.csproj
+cat << 'EOF' > 2-dequeue.csproj
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
@@ -12,7 +12,7 @@ cat << 'EOF' > 1-enqueue.csproj
     <ImplicitUsings>disable</ImplicitUsings>
     <Nullable>disable</Nullable>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <DocumentationFile>bin\Debug\netcoreapp2.1\1-enqueue.xml</DocumentationFile>
+    <DocumentationFile>bin\Debug\netcoreapp2.1\2-dequeue.xml</DocumentationFile>
   </PropertyGroup>
 
 </Project>
@@ -90,6 +90,30 @@ public class Queue<T>
     }
 
     /// <summary>
+    /// Removes the first node in the queue and returns its value.
+    /// </summary>
+    /// <returns>The value of the removed node, or default(T) if empty.</returns>
+    public T Dequeue()
+    {
+        if (head == null)
+        {
+            Console.WriteLine("Queue is empty");
+            return default(T);
+        }
+
+        T removedValue = head.value;
+        head = head.next;
+
+        if (head == null)
+        {
+            tail = null;
+        }
+
+        count--;
+        return removedValue;
+    }
+
+    /// <summary>
     /// Returns the total count of elements currently in the Queue.
     /// </summary>
     /// <returns>The total number of nodes as an integer.</returns>
@@ -100,4 +124,4 @@ public class Queue<T>
 }
 EOF
 
-echo "Task 1 directory '1-enqueue' and its files created successfully."
+echo "Task 2 directory '2-dequeue' and its files created successfully."
