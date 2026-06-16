@@ -1,8 +1,8 @@
-using System;
+﻿using System;
 
 public class Queue<T>
 {
-    public Type CheckType()
+        public Type CheckType()
     {
         return typeof(T);
     }
